@@ -12,8 +12,10 @@
                          <a href="#"><img src="images/resource/img1.jpeg" alt="" /></a>
                      </div>
                      <div class="lower-content">
-                         <div class="btns-box">
-                             <a href="causes-single.html" class="theme-btn btn-style-four">More Detail</a>
+                         <div class="btns-box" style="width: 100%;">
+                             <button class="theme-btn btn-style-two">
+                                 Add to Cart
+                             </button>
                          </div>
                      </div>
                  </div>

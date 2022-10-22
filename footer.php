@@ -30,20 +30,22 @@
                             <div class="row clearfix">
                                 <div class="column col-md-6 col-sm-6 col-xs-12">
                                     <ul class="footer-list">
-                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="about.php">About Us</a></li>
                                         <li><a href="#">FAQ</a></li>
                                         <li><a href="#">Payment Plan</a></li>
                                         <li><a href="#">Whatsapp Contact</a></li>
-                                        <li><a href="#">Contact us </a></li>
+                                        <li><a href="contact.php">Contact us </a></li>
+                                        <li><a href="sigin.php">Sign in </a></li>
                                     </ul>
                                 </div>
                                 <div class="column col-md-6 col-sm-6 col-xs-12">
                                     <ul class="footer-list">
-                                        <li><a href="#">Ready to Wear</a></li>
+                                        <li><a href="">Ready to Wear</a></li>
                                         <li><a href="#">Coutures</a></li>
                                         <li><a href="#">Fashion School</a></li>
                                         <li><a href="#">Online school</a></li>
-                                        <li><a href="#">See Cart</a></li>
+                                        <li><a href="cart.php">See Cart</a></li>
+                                        <li><a href="register.php">Register</a></li>
                                     </ul>
                                 </div>
                             </div>

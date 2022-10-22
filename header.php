@@ -1,3 +1,9 @@
+<?php
+session_start();
+require("controller/authController.php");
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -12,9 +18,9 @@
     <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
     <!-- REVOLUTION NAVIGATION STYLES -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 
     <!--Color Themes-->
     <link id="theme-color-file" href="css/color-themes/olive-theme.css" rel="stylesheet">
@@ -68,7 +74,7 @@
                     <div class="clearfix">
 
                         <div class="pull-left logo-outer">
-                            <div class="logo"><a href="/"><img src="images/logo.png " alt="" title=""></a></div>
+                            <div class="logo"><a href="index.php"><img src="images/logo.png " alt="" title=""></a></div>
                         </div>
 
                         <div class="pull-right upper-right clearfix">
@@ -106,8 +112,9 @@
                             <div class="upper-column info-box">
                                 <ul><a href="cart.php">
                                         <span class="material-symbols-outlined" style="font-size: 35px;">
-                                            shopping_cart
+                                            shopping_bag
                                         </span>
+                                        <sup>0</sup>
                                     </a>
                                 </ul>
                             </div>
@@ -134,8 +141,14 @@
 
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="current"><a href="/">Home</a></li>
-                                    <li><a href="products.php">Shop Now</a></li>
+                                    <li class="current"><a href="index.php">Home</a></li>
+                                    <li class="dropdown"><a href="#">Shop Now</a>
+                                        <ul>
+                                            <li><a href="#">Cat 1</a></li>
+                                            <li><a href="#">cat 2</a></li>
+                                            <li><a href="#">cat 3</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="about.php">About Us</a></li>
                                     <li class="dropdown"><a href="#">Services</a>
                                         <ul>
@@ -152,7 +165,19 @@
                         </nav>
                         <!-- Main Menu End-->
                         <div class="outer-box">
-                            <a href="booking" class="theme-btn btn-style-two">Book Now</a>
+                            <?php
+                            if (isset($_SESSION['user_id'])) {
+                                echo
+                                '<a href="index.php?logout=1" class="theme-btn btn-style-two">
+                                Log out
+                            </a>';
+                            } else {
+                                echo '<a href="signin.php" class="theme-btn btn-style-two">
+                                Sign in
+                            </a>';
+                            }
+                            ?>
+                            
                         </div>
                     </div>
                 </div>
@@ -183,7 +208,13 @@
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="index.php">Home</a></li>
-                                    <li><a href="#">Shop Now</a></li>
+                                    <li class="dropdown"><a href="#">Shop Now</a>
+                                        <ul>
+                                            <li><a href="#">Cat 1</a></li>
+                                            <li><a href="#">cat 2</a></li>
+                                            <li><a href="#">cat 3</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="about.php">About Us</a></li>
                                     <li class="dropdown"><a href="#">Services</a>
                                         <ul>
@@ -196,8 +227,10 @@
                                     <li><a href="contact.php">Contact</a></li>
 
                                     <li><a href="cart.php"><span class="material-symbols-outlined" style="font-size: 35px;">
-                                                shopping_cart
-                                            </span></a></li>
+                                                shopping_bag
+                                            </span>
+                                            <sup>0</sup>
+                                        </a></li>
                                 </ul>
                             </div>
                         </nav><!-- Main Menu End-->

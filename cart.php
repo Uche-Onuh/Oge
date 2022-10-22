@@ -2,40 +2,80 @@
 include("header.php");
 ?>
 
-
-
-
-
-<div class="py-5" style="margin: 100px 0;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row cart_items">
-                    <div class="col-md-2">
-                        <img src="images/products/news-6.jpg" alt="image name" width="80px">
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Product name</h5>
-                    </div>
-
-                    <div class="col-md-3">
-                        <h5>Product price</h5>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="input-group mb-3" style="width: 130px;">
-                            <button class="input-group-text decrement-btn">-</button>
-                            <input type="text" class="form-control text-center input-qty bg-white" value="" disabled>
-                            <button class="input-group-text increment-btn">+</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-danger">Remove</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div id="cart" class="section-p1" style="margin-top: 70px;">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button><span class="material-symbols-outlined">delete</span></button></td>
+                <td><img src=" img/products/f1.jpg" alt=""></td>
+                <td>Cartoon Astronaught T-shirt</td>
+                <td>$3000</td>
+                <td>
+                    <button class="qty-up border bg-light">-</button>
+                    <input type="text" disabled>
+                    <button class="qty-up border bg-light">+</button>
+                </td>
+                <td>$3000</td>
+            </tr>
+            <tr>
+                <td><button><span class="material-symbols-outlined">delete</span></button></td>
+                <td><img src="img/products/f1.jpg" alt=""></td>
+                <td>Cartoon Astronaught T-shirt</td>
+                <td>$3000</td>
+                <td><input type="number" value="1"></td>
+                <td>$3000</td>
+            </tr>
+            <tr>
+                <td><button><span class="material-symbols-outlined">delete</span></button></td>
+                <td><img src="img/products/f1.jpg" alt=""></td>
+                <td>Cartoon Astronaught T-shirt</td>
+                <td>$3000</td>
+                <td><input type="number" value="1"></td>
+                <td>$3000</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+
+
+<section class="section-p1" id="cart-add">
+    <div id="coupon">
+        <!-- <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div> -->
+    </div>
+
+    <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>$9000</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$9000</strong></td>
+            </tr>
+        </table>
+        <button class="btn" type="submit" width="100%">Proceed to Checkout</button>
+    </div>
+</section>
 
 
 <?php
