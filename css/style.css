@@ -350,7 +350,7 @@ li {
   position: relative;
   line-height: 24px;
   color: #333333;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   background: transparent;
   display: inline-block;
@@ -2268,7 +2268,6 @@ img {
   color: #666666;
   font-size: 16px;
   line-height: 1.7em;
-  min-height: 81px;
   margin-bottom: 25px;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;

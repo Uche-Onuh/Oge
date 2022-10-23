@@ -34,7 +34,7 @@ include("includes/header.php");
                                     <tr>
                                         <td><?= $item['id']; ?></td>
                                         <td><?= $item['name']; ?></td>
-                                        <td><img src="../img/cateImg/<?= $item['image']; ?>" width="50px" height="50px" alt="<?= $item['name']; ?>"></td>
+                                        <td><img src="../images/cateImg/<?= $item['image']; ?>" width="50px" height="50px" alt="<?= $item['name']; ?>"></td>
                                         <td><?= $item['status'] == '0' ? "Visible" : "Hidden"; ?></td>
                                         <td><a href="edit-category.php?id=<?= $item['id']; ?>" class="btn btn-primary"><i class="material-icons opacity-10">edit</i></a></td>
                                         <td><button type="submit" class="btn btn-danger delete_category_button" value="<?= $item['id']; ?>"><i class="material-icons opacity-10">delete</i></button></td>

@@ -1,6 +1,7 @@
 <?php
 session_start();
 require("controller/authController.php");
+require("functions.php");
 
 ?>
 
@@ -144,9 +145,24 @@ require("controller/authController.php");
                                     <li class="current"><a href="index.php">Home</a></li>
                                     <li class="dropdown"><a href="#">Shop Now</a>
                                         <ul>
-                                            <li><a href="#">Cat 1</a></li>
-                                            <li><a href="#">cat 2</a></li>
-                                            <li><a href="#">cat 3</a></li>
+                                            <?php
+                                            $categories = getAllActive("categories");
+
+                                            if (mysqli_num_rows($categories) > 0) {
+                                                foreach ($categories as $item) {
+                                            ?>
+                                                    <li>
+                                                        <a href="products.php?category=<?= $item['slug']; ?>">
+                                                            <?= $item["name"]; ?>
+                                                        </a>
+                                                    </li>
+
+                                            <?php
+                                                }
+                                            } else {
+                                                echo '<li><a>No category available</a></li>';
+                                            }
+                                            ?>
                                         </ul>
                                     </li>
                                     <li><a href="about.php">About Us</a></li>
@@ -177,7 +193,7 @@ require("controller/authController.php");
                             </a>';
                             }
                             ?>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -210,9 +226,24 @@ require("controller/authController.php");
                                     <li class="current"><a href="index.php">Home</a></li>
                                     <li class="dropdown"><a href="#">Shop Now</a>
                                         <ul>
-                                            <li><a href="#">Cat 1</a></li>
-                                            <li><a href="#">cat 2</a></li>
-                                            <li><a href="#">cat 3</a></li>
+                                            <?php
+                                            $categories = getAllActive("categories");
+
+                                            if (mysqli_num_rows($categories) > 0) {
+                                                foreach ($categories as $item) {
+                                            ?>
+                                                    <li>
+                                                        <a href="products.php?category=<?= $item['slug']; ?>">
+                                                            <?= $item["name"]; ?>
+                                                        </a>
+                                                    </li>
+
+                                            <?php
+                                                }
+                                            } else {
+                                                echo '<li><a>No category available</a></li>';
+                                            }
+                                            ?>
                                         </ul>
                                     </li>
                                     <li><a href="about.php">About Us</a></li>

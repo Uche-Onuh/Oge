@@ -16,7 +16,7 @@ if (isset($_POST['add_category_btn'])) {
 
     $image = $_FILES['image']['name'];
 
-    $path = "../img/cateImg";
+    $path = "../images/cateImg";
 
     $image_ext = pathinfo($image, PATHINFO_EXTENSION);
     $filename = time() . '.' . $image_ext;
@@ -53,7 +53,7 @@ if (isset($_POST['add_category_btn'])) {
         $updateFilename = $old_image;
     }
 
-    $path = "../img/cateImg";
+    $path = "../images/cateImg";
 
     $update_query =  "UPDATE categories SET name='$name', slug='$slug', description='$description', 
     meta_title='$meta_title', meta_description='$meta_description', meta_keywords='$meta_keywords', 
@@ -64,8 +64,8 @@ if (isset($_POST['add_category_btn'])) {
     if ($update_query_run) {
         if ($_FILES['image']['name'] != '') {
             move_uploaded_file($_FILES['image']['tmp_name'], $path . '/' . $updateFilename);
-            if (file_exists("../img/cateImg/" . $old_image)) {
-                unlink("../img/cateImg/" . $old_image);
+            if (file_exists("../images/cateImg/" . $old_image)) {
+                unlink("../images/cateImg/" . $old_image);
             }
         }
         redirect("edit-category.php?id=$category_id", "Category updated successfully");
@@ -84,8 +84,8 @@ if (isset($_POST['add_category_btn'])) {
     $delete_query_run = mysqli_query($conn, $delete_query);
 
     if ($delete_query_run) {
-        if (file_exists("../img/cateImg/" . $image)) {
-            unlink("../img/cateImg/" . $image);
+        if (file_exists("../images/cateImg/" . $image)) {
+            unlink("../images/cateImg/" . $image);
         }
         // redirect('category.php', 'Category succesfully deleted');
         echo 200;
@@ -111,7 +111,7 @@ if (isset($_POST['add_category_btn'])) {
 
     $image = $_FILES['image']['name'];
 
-    $path = "../img/exproducts";
+    $path = "../images/products";
 
     $image_ext = pathinfo($image, PATHINFO_EXTENSION);
     $filename = time() . '.' . $image_ext;
@@ -149,7 +149,7 @@ if (isset($_POST['add_category_btn'])) {
     $status = isset($_POST['status']) ? '1' : '0';
     $trending = isset($_POST['trending'])  ? '1' : '0';
 
-    $path = "../img/exproducts";
+    $path = "../images/products";
 
     $new_image = $_FILES['image']['name'];
     $old_image = $_POST['old_image'];
@@ -175,8 +175,8 @@ if (isset($_POST['add_category_btn'])) {
     if ($update_product_query_run) {
         if ($_FILES['image']['name'] != '') {
             move_uploaded_file($_FILES['image']['tmp_name'], $path . '/' . $updateFilename);
-            if (file_exists("../img/exproducts/" . $old_image)) {
-                unlink("../img/exproducts/" . $old_image);
+            if (file_exists("../images/products/" . $old_image)) {
+                unlink("../images/products/" . $old_image);
             }
         }
         redirect("edit-product.php?id=$product_id", "Product updated successfully");
@@ -195,8 +195,8 @@ if (isset($_POST['add_category_btn'])) {
     $delete_query_run = mysqli_query($conn, $delete_query);
 
     if ($delete_query_run) {
-        if (file_exists("../img/exproducts/" . $image)) {
-            unlink("../img/exproducts/" . $image);
+        if (file_exists("../images/products/" . $image)) {
+            unlink("../images/products/" . $image);
         }
         // redirect('products.php', 'Product succesfully deleted');
         echo 200;

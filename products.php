@@ -26,39 +26,30 @@ include("header.php");
     <div class="auto-container">
         <div class="row clearfix">
             <!--Content Side-->
-            <div class="content-side col-lg-12 col-md-8 col-sm-12 col-xs-12">
+            <div class="content-side col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="causes-grid">
                     <div class="row clearfix">
-
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
-                                    <img src="images/resource/case-5.jpg" alt="" />
-                                    <a href="causes-single.html" class="overlay-box"><span class="icon flaticon-unlink"></span></a>
+                                    <a href="product-single.php"><img src="images/products/news-6.jpg" alt="" /></a>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="causes-single.html">Help for Education</a></h3>
+                                    <h3><a href="causes-single.html">Austrailian style velvet dress</a></h3>
                                     <div class="content">
-                                        <div class="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                        <div class="overlay-box">
-                                            <div class="collect">We need to collect <span class="theme_color">9,500,000</span></div>
-                                            <div class="donate-percentage">
-                                                <div class="donate-bar">
-                                                    <span class="bar-line"></span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div class="text">&#8358; 7000</div>
                                     </div>
                                     <div class="btns-box">
-                                        <a href="donate.html" class="theme-btn btn-style-two">Donate</a>
+                                        <a href="causes-single.html" class="theme-btn btn-style-four">Add to Cart</a>
+                                        <a href="causes-single.html" class="theme-btn btn-style-two">Wishlist</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-6.jpg" alt="" />
@@ -85,7 +76,7 @@ include("header.php");
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-7.jpg" alt="" />
@@ -112,7 +103,7 @@ include("header.php");
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-8.jpg" alt="" />
@@ -139,7 +130,7 @@ include("header.php");
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-9.jpg" alt="" />
@@ -168,7 +159,7 @@ include("header.php");
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-10.jpg" alt="" />
@@ -195,7 +186,7 @@ include("header.php");
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-11.jpg" alt="" />
@@ -222,7 +213,7 @@ include("header.php");
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-12.jpg" alt="" />
@@ -249,7 +240,7 @@ include("header.php");
                         </div>
 
                         <!--Causes Block-->
-                        <div class="causes-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="causes-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="images/resource/case-13.jpg" alt="" />

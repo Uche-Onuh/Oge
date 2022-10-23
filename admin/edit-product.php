@@ -71,7 +71,7 @@ include("includes/header.php");
                                         <input type="hidden" name="old_image" value="<?= $data['item_image'] ?>">
                                         <input type="file" name="image" class="form-control mb-2" placeholder="Upload Product image">
                                         <label class="mb-0"></label>
-                                        <img src="../img/exproducts/<?= $data['item_image']; ?>" alt="Product Image" height="50px" width="50px">
+                                        <img src="../images/products/<?= $data['item_image']; ?>" alt="Product Image" height="50px" width="50px">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">

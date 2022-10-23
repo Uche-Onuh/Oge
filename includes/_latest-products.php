@@ -13,7 +13,8 @@
                      </div>
                      <div class="lower-content">
                          <div class="btns-box">
-                             <a href="causes-single.html" class="theme-btn btn-style-four">More Detail</a>
+                             <a href="causes-single.html" class="theme-btn btn-style-four">Add to Cart</a>
+                             <a href="causes-single.html" class="theme-btn btn-style-two">Wishlist</a>
                          </div>
                      </div>
                  </div>
