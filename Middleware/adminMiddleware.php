@@ -7,7 +7,7 @@ if (isset($_SESSION['email'])) {
         redirect("../index.php", "You are not Authorized to view this page");
     }
 } else {
-    redirect("../signin.php", "login to continue");
+    redirect("../login.php", "login to continue");
 }
 
 ?>

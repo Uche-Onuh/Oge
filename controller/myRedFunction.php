@@ -80,7 +80,7 @@ function getTransactionsBySucc($payment_status)
 {
     global $conn;
 
-
+    
 
     $query = "SELECT * FROM orders WHERE payment_status = '$payment_status' ORDER BY id DESC";
     return $query_run = mysqli_query($conn, $query);
@@ -118,3 +118,5 @@ function redirect($url, $message)
     header('location: ' . $url);
     exit();
 }
+
+

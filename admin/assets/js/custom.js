@@ -138,4 +138,39 @@ $(document).ready(function () {
       }
     });
   });
+
+  // delete img
+  $(document).on("click", ".delete_image_button", function (e) {
+    e.preventDefault();
+
+    var id = $(this).val();
+    // alert(id);
+
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        $.ajax({
+          method: "POST",
+          url: "code.php",
+          data: {
+            id: id,
+            delete_image_button: true,
+          },
+          success: function (response) {
+            if (response == 200) {
+              swal("Success!", "Image succesfully deleted", "success");
+              $("#image_table").load(location.href + " #image_table");
+            } else if (response == 500) {
+              swal("Error!", "Something went wrong", "error");
+            }
+          },
+        });
+      }
+    });
+  });
 });

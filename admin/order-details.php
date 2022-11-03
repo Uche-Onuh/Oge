@@ -142,7 +142,7 @@ $data = mysqli_fetch_array($orderData);
                                                                                 }
                                                                                 ?></span></h5>
                                     <hr color="blue">
-                                    <h5>Edit Status : <span class="float-end"><a href="edit-status.php?ref=<?= $data['reference'] ?>" class="btn btn-info btn-sm">Change status</a></h5>
+                                    <h5>Edit Status : <span class="float-end"><a href="edit-status.php?ref=<?= $data['reference'] ?>" class="btn btn-warning btn-sm">Change status</a></h5>
                                     <hr color="blue">
 
                                 </div>

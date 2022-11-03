@@ -19,10 +19,10 @@ include("includes/header.php");
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Email</th>
+                                <th>Status</th>
                                 <th>Role</th>
                                 <th>Edit Role</th>
                                 <th>Delete</th>
-                                <th>Created at</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,6 +36,7 @@ include("includes/header.php");
                                         <td><?= $item['user_id']; ?></td>
                                         <td style="text-transform: capitalize;"><?= $item['username']; ?></td>
                                         <td><?= $item['email']; ?></td>
+                                        <td><?= $item['verified'] == '0' ? "Not-verified" : "Verified"; ?></td>
                                         <td><?= $item['role_as'] == '0' ? "Client" : "Admin"; ?></td>
                                         <td>
                                             <a href="edit-user.php?id=<?= $item['user_id']; ?>" class="btn btn-primary"><i class="material-icons opacity-10">edit</i></a>
@@ -43,8 +44,6 @@ include("includes/header.php");
                                         <td>
                                             <button type="button" class="btn btn-danger delete_user_button" value="<?= $item['user_id']; ?>"><i class="material-icons opacity-10">delete</i></button>
                                         </td>
-
-                                        <td><?= $item['created_at']; ?></td>
                                     </tr>
                             <?php
                                 }

@@ -6,7 +6,7 @@
            <div class="sidenav-header">
                <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
                <a class="navbar-brand m-0" href="index.php">
-                   <img src="assets/img/logo.png" class="navbar-brand-img h-100" alt="main_logo">
+                   <img src="assets/img/logo.png" class="navbar-brand-img h-100" alt="main_logo" height="200px">
                    <span class="ms-1 font-weight-bold text-white"></span>
                </a>
            </div>
@@ -14,7 +14,7 @@
            <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
                <ul class="navbar-nav">
                    <li class="nav-item">
-                       <a class="nav-link text-white active <?= $page == "index.php" ? 'active bg-gradient-info' : ''; ?>" href="index.php">
+                       <a class="nav-link text-white active <?= $page == "index.php" ? 'active bg-gradient-warning' : ''; ?>" href="index.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">dashboard</i>
                            </div>
@@ -22,7 +22,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "category.php" ? 'active bg-gradient-info' : ''; ?> " href="category.php">
+                       <a class="nav-link text-white <?= $page == "category.php" ? 'active bg-gradient-warning' : ''; ?> " href="category.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">table_view</i>
                            </div>
@@ -30,7 +30,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "add-category.php" ? 'active bg-gradient-info' : ''; ?> " href="add-category.php">
+                       <a class="nav-link text-white <?= $page == "add-category.php" ? 'active bg-gradient-warning' : ''; ?> " href="add-category.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">add</i>
                            </div>
@@ -38,7 +38,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "products.php" ? 'active bg-gradient-info' : ''; ?>  " href="products.php">
+                       <a class="nav-link text-white <?= $page == "products.php" ? 'active bg-gradient-warning' : ''; ?>  " href="products.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">table_view</i>
                            </div>
@@ -46,7 +46,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "add-product.php" ? 'active bg-gradient-info' : ''; ?> " href="add-product.php">
+                       <a class="nav-link text-white <?= $page == "add-product.php" ? 'active bg-gradient-warning' : ''; ?> " href="add-product.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">add</i>
                            </div>
@@ -54,7 +54,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "users.php" ? 'active bg-gradient-info' : ''; ?> " href="users.php">
+                       <a class="nav-link text-white <?= $page == "users.php" ? 'active bg-gradient-warning' : ''; ?> " href="users.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">account_circle</i>
                            </div>
@@ -62,7 +62,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "orders.php" ? 'active bg-gradient-info' : ''; ?> " href="orders.php">
+                       <a class="nav-link text-white <?= $page == "orders.php" ? 'active bg-gradient-warning' : ''; ?> " href="orders.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">shopping_bag</i>
                            </div>
@@ -70,7 +70,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "transactions.php" ? 'active bg-gradient-info' : ''; ?> " href="transactions.php">
+                       <a class="nav-link text-white <?= $page == "transactions.php" ? 'active bg-gradient-warning' : ''; ?> " href="transactions.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">paid</i>
                            </div>
@@ -78,7 +78,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "sales.php" ? 'active bg-gradient-info' : ''; ?> " href="sales.php">
+                       <a class="nav-link text-white <?= $page == "sales.php" ? 'active bg-gradient-warning' : ''; ?> " href="sales.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">sell</i>
                            </div>
@@ -86,7 +86,7 @@
                        </a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white <?= $page == "add-sales.php" ? 'active bg-gradient-info' : ''; ?> " href="add-sales.php">
+                       <a class="nav-link text-white <?= $page == "add-sales.php" ? 'active bg-gradient-warning' : ''; ?> " href="add-sales.php">
                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                <i class="material-icons opacity-10">add</i>
                            </div>
@@ -97,7 +97,7 @@
            </div>
            <div class="sidenav-footer position-absolute w-100 bottom-0 ">
                <div class="mx-3">
-                   <a class="btn bg-gradient-info mt-4 w-100" href="../index.php?logout=1">Log Out</a>
+                   <a class="btn bg-gradient-warning mt-4 w-100" href="../index.php?logout=1">Log Out</a>
                </div>
            </div>
        </aside>

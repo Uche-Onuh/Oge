@@ -30,7 +30,7 @@ include("includes/header.php");
                                         <input type="checkbox" <?= $data['role_as'] ? "checked" : "" ?> name="role_as">
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="btn btn-info" name="create_admin_btn" type="submit">UPDATE</button>
+                                        <button class="btn btn-warning" name="create_admin_btn" type="submit">UPDATE</button>
                                     </div>
                                 </div>
                             </form>

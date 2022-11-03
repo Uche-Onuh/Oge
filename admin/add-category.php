@@ -50,7 +50,7 @@ include("includes/header.php");
                                 <input type="checkbox" name="popular">
                             </div>
                             <div class="col-md-12">
-                                <button class="btn btn-info" name="add_category_btn" type="submit">SAVE</button>
+                                <button class="btn btn-warning" name="add_category_btn" type="submit">SAVE</button>
                             </div>
                         </div>
                     </form>

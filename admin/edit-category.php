@@ -39,7 +39,7 @@ include("includes/header.php");
                                         <input type="file" name="image" class="form-control" placeholder="Upload Category image">
                                         <label for="">Current Image</label>
                                         <input type="hidden" name="old_image" value="<?= $data['image'] ?>">
-                                        <img src="../images/cateImg/<?= $data['image'] ?>" height="50px" width="50px" alt="">
+                                        <img src="../img/cateImg/<?= $data['image'] ?>" height="50px" width="50px" alt="">
                                     </div>
                                     <div class="col-md-12">
                                         <label for="">Meta Title</label>
@@ -62,7 +62,7 @@ include("includes/header.php");
                                         <input type="checkbox" <?= $data['popular'] ? "checked" : "" ?> name="popular">
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="btn btn-info" name="update_category_btn" type="submit">UPDATE</button>
+                                        <button class="btn btn-warning" name="update_category_btn" type="submit">UPDATE</button>
                                     </div>
                                 </div>
                             </form>

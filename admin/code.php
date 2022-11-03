@@ -16,7 +16,7 @@ if (isset($_POST['add_category_btn'])) {
 
     $image = $_FILES['image']['name'];
 
-    $path = "../images/cateImg";
+    $path = "../img/cateImg";
 
     $image_ext = pathinfo($image, PATHINFO_EXTENSION);
     $filename = time() . '.' . $image_ext;
@@ -53,7 +53,7 @@ if (isset($_POST['add_category_btn'])) {
         $updateFilename = $old_image;
     }
 
-    $path = "../images/cateImg";
+    $path = "../img/cateImg";
 
     $update_query =  "UPDATE categories SET name='$name', slug='$slug', description='$description', 
     meta_title='$meta_title', meta_description='$meta_description', meta_keywords='$meta_keywords', 
@@ -64,8 +64,8 @@ if (isset($_POST['add_category_btn'])) {
     if ($update_query_run) {
         if ($_FILES['image']['name'] != '') {
             move_uploaded_file($_FILES['image']['tmp_name'], $path . '/' . $updateFilename);
-            if (file_exists("../images/cateImg/" . $old_image)) {
-                unlink("../images/cateImg/" . $old_image);
+            if (file_exists("../img/cateImg/" . $old_image)) {
+                unlink("../img/cateImg/" . $old_image);
             }
         }
         redirect("edit-category.php?id=$category_id", "Category updated successfully");
@@ -84,8 +84,8 @@ if (isset($_POST['add_category_btn'])) {
     $delete_query_run = mysqli_query($conn, $delete_query);
 
     if ($delete_query_run) {
-        if (file_exists("../images/cateImg/" . $image)) {
-            unlink("../images/cateImg/" . $image);
+        if (file_exists("../img/cateImg/" . $image)) {
+            unlink("../img/cateImg/" . $image);
         }
         // redirect('category.php', 'Category succesfully deleted');
         echo 200;
@@ -100,6 +100,7 @@ if (isset($_POST['add_category_btn'])) {
     $small_description = $_POST['small_description'];
     $description = $_POST['description'];
     $item_price = $_POST['item_price'];
+    $original_price = $_POST['original_price'];
     $item_brand = $_POST['item_brand'];
     $qty = $_POST['qty'];
     $meta_title = $_POST['meta_title'];
@@ -111,15 +112,15 @@ if (isset($_POST['add_category_btn'])) {
 
     $image = $_FILES['image']['name'];
 
-    $path = "../images/products";
+    $path = "../img/exproducts";
 
     $image_ext = pathinfo($image, PATHINFO_EXTENSION);
     $filename = time() . '.' . $image_ext;
 
     if ($name != '' && $slug != '' && $description != '' && $item_brand != '' && $item_price != '') {
-        $product_query = "INSERT INTO product (category_id,item_brand,item_name,slug,small_description,description,item_price,
+        $product_query = "INSERT INTO product (category_id,item_brand,item_name,slug,small_description,description,item_price,discount_price,
         qty,status,meta_description,trending,meta_title,meta_keywords,item_tags,item_image) VALUES ('$category_id', '$item_brand', '$name',
-        '$slug', '$small_description', '$description', '$item_price', '$qty', '$status','$meta_description', '$trending', '$meta_title', 
+        '$slug', '$small_description', '$description', '$item_price','$original_price', '$qty', '$status','$meta_description', '$trending', '$meta_title', 
         '$meta_keywords', '$tags', '$filename')";
 
         $product_query_run = mysqli_query($conn, $product_query);
@@ -140,6 +141,7 @@ if (isset($_POST['add_category_btn'])) {
     $small_description = $_POST['small_description'];
     $description = $_POST['description'];
     $item_price = $_POST['item_price'];
+    $original_price = $_POST['original_price'];
     $item_brand = $_POST['item_brand'];
     $qty = $_POST['qty'];
     $meta_title = $_POST['meta_title'];
@@ -149,7 +151,7 @@ if (isset($_POST['add_category_btn'])) {
     $status = isset($_POST['status']) ? '1' : '0';
     $trending = isset($_POST['trending'])  ? '1' : '0';
 
-    $path = "../images/products";
+    $path = "../img/exproducts";
 
     $new_image = $_FILES['image']['name'];
     $old_image = $_POST['old_image'];
@@ -166,7 +168,7 @@ if (isset($_POST['add_category_btn'])) {
 
 
     $update_product_query = "UPDATE product SET category_id='$category_id', item_brand='$item_brand',item_name='$name', slug='$slug', 
-     small_description='$small_description', description='$description', item_price='$item_price', item_image='$updateFilename', qty='$qty', status='$status', 
+     small_description='$small_description', description='$description', item_price='$item_price', discount_price='$item_price', item_image='$updateFilename', qty='$qty', status='$status', 
      meta_description='$meta_description', trending='$trending', meta_title='$meta_title', meta_keywords='$meta_keywords', 
      item_tags='$tags'  WHERE item_id='$product_id'";
 
@@ -175,8 +177,8 @@ if (isset($_POST['add_category_btn'])) {
     if ($update_product_query_run) {
         if ($_FILES['image']['name'] != '') {
             move_uploaded_file($_FILES['image']['tmp_name'], $path . '/' . $updateFilename);
-            if (file_exists("../images/products/" . $old_image)) {
-                unlink("../images/products/" . $old_image);
+            if (file_exists("../img/exproducts/" . $old_image)) {
+                unlink("../img/exproducts/" . $old_image);
             }
         }
         redirect("edit-product.php?id=$product_id", "Product updated successfully");
@@ -195,8 +197,8 @@ if (isset($_POST['add_category_btn'])) {
     $delete_query_run = mysqli_query($conn, $delete_query);
 
     if ($delete_query_run) {
-        if (file_exists("../images/products/" . $image)) {
-            unlink("../images/products/" . $image);
+        if (file_exists("../img/exproducts/" . $image)) {
+            unlink("../img/exproducts/" . $image);
         }
         // redirect('products.php', 'Product succesfully deleted');
         echo 200;
@@ -280,11 +282,47 @@ if (isset($_POST['add_category_btn'])) {
     if ($month != '' && $amount != '' && $year != '') {
         $sales_query = "INSERT INTO sales_statistics (total_sales,month,year) VALUES ('$amount', '$month', '$year')";
         $sales_query_run = mysqli_query($conn, $sales_query);
-        if ($update_user_query_run) {
+        if ($sales_query_run) {
             redirect("add-sales.php", "Monthly total added successfully");
         } else {
             redirect("add-sales.php", "Something went wrong");
         }
+    }
+} else if (isset($_POST['add_picture_btn'])) {
+    
+    $imageCount = count($_FILES['image']['name']);
+    for($i=0; $i<$imageCount; $i++){
+        $item_id = $_POST['product_id'];
+        $imageName = $_FILES['image']['name'][$i];
+        $imageTempName = $_FILES['image']['tmp_name'][$i];
+        $targetPath = "../img/extraImg/" .$imageName;
+        if(move_uploaded_file($imageTempName, $targetPath)){
+            $sql = "INSERT INTO alt_img(image, item_id) VALUES('$imageName', '$item_id')";
+            $result = mysqli_query($conn, $sql);
+        }
+    }if($result){
+        redirect("add-picture.php?id=$item_id", "Images added");
+    }else{
+        redirect("add-picture.php?id=$item_id", "Images not added");
+    }
+} else if ($_POST['delete_image_button']) {
+    $id = mysqli_real_escape_string($conn, $_POST['id']);
+
+    $image_query = "SELECT * FROM alt_img WHERE id='$id'";
+    $image_query_run = mysqli_query($conn, $image_query);
+    $image_data = mysqli_fetch_array($image_query_run);
+    $img = $image_data['image'];
+
+    $delete_query = "DELETE FROM alt_img WHERE id='$id'";
+    $delete_query_run = mysqli_query($conn, $delete_query);
+
+    if ($delete_query_run) {
+        if (file_exists("../img/extraImg/" . $img)) {
+            unlink("../img/extraImg/" . $img);
+        }
+        echo 200;
+    } else {
+        redirect('add-picture.php', 'Something went wrong');
     }
 } else {
     header('location: ../index.php');

@@ -1,51 +1,58 @@
 <?php
-include("header.php");
+
+include("header.php")
 ?>
 
+
+<!-- hero section -->
 <?php
-include("includes/slider.php");
+include("temp/_banner.php")
 ?>
+<!-- FEATURES BEGINS -->
+<?php
+include("temp/_features.php")
+?>
+<!-- FEATURES BEGINS -->
+
+<!-- LATEST PRODUCTS BEGINS -->
+<?php
+include("temp/_latestproducts.php")
+?>
+<!-- LATEST PRODUCTS BEGINS -->
+
+
+
+<!-- CALL TO ACTION BEGINS -->
+<?php
+include("temp/_action.php")
+?>
+<!-- CALL TO ACTION BEGINS -->
+
+<!-- fEATURED PRODUCTS SECTION BEGINS -->
+<?php
+include("temp/_featuredproducts.php")
+?>
+<!-- fEATURED PRODUCTS SECTION ENDS -->
+
+
+<!--2 GRID BANNERS BEGIN -->
+<?php
+include("temp/_services.php")
+?>
+<!-- 2 GRID BANNERS ENDS -->
 
 <?php
-include("includes/_features.php");
+include("temp/_courses.php")
 ?>
 
+<!-- NEWSLETTER SECTION BEGINS -->
 <?php
-include("includes/_welcome.php");
+include("temp/_newsletter.php")
 ?>
+<!-- NEWSLETTER SECTION END -->
 
-<?php
-include("includes/_services.php");
-?>
 
+<!-- footer section -->
 <?php
-include("includes/_cta.php");
-?>
-
-<?php
-include("includes/_latest-products.php");
-?>
-
-<?php
-include("includes/_cta2.php");
-?>
-
-<?php
-include("includes/_featured-products.php");
-?>
-
-<?php
-include("includes/_school.php");
-?>
-
-<?php
-include("includes/_gallery.php");
-?>
-
-<?php
-include("includes/_newsletter.php");
-?>
-
-<?php
-include("footer.php");
+include("footer.php")
 ?>

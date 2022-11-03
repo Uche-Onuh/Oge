@@ -30,7 +30,7 @@ include("includes/header.php");
                                         <input type="number" name="status" value="<?= $data['status']; ?>">
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="btn btn-info" name="update_status_btn" type="submit">UPDATE</button>
+                                        <button class="btn btn-warning" name="update_status_btn" type="submit">UPDATE</button>
                                     </div>
                                 </div>
                             </form>

@@ -1,142 +1,97 @@
-    <!--Main Footer-->
-    <footer class="main-footer">
-        <div class="auto-container">
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row clearfix">
-
-                    <!--Footer Column-->
-                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                        <div class="footer-widget">
-                            <div class="logo">
-                                <a href="index.html"><img src="images/logo.png" alt="" /></a>
-                            </div>
-                            <div class="text">Core values are the fundamental beliefs of a person or organization.
-                                The core values are the guiding prin ples that dictate behavior and action suas
-                                labore saperet has there any quote for write lorem percit latineu.<br /><br /></div>
-                            <ul class="list-style-two">
-                                <li><span class="icon flaticon-location-pin"></span>14 Tottenham Court Road,
-                                    NewYark.</li>
-                                <li><span class="icon flaticon-technology-1"></span>1(784)-775-97-377</li>
-                                <li><span class="icon flaticon-symbol"></span>info@yoursite.com</li>
-                            </ul>
-                        </div>
+    <footer class="section-p1">
+        <div class="footer">
+            <div class="col">
+                <img src="img/logo.png" alt="Exochos Nigeria Logo" class="logo">
+                <h4>Contact Details</h4>
+                <p><strong>Address:</strong> Diamond plaza 88 Mushin road, Isolo Lagos stat, Nigeria.</p>
+                <p><strong>Phone:</strong> (+234) 905 836 1341.</p>
+                <p><strong>Phone:</strong> (+234) 808 502 8709.</p>
+                <p><strong>Hours:</strong> 8:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/exochosbusinessventures" target="blank"><img src="img/svgs/brands/facebook-f.svg" alt="" class="facebook"></a>
+                        <a href="" target="blank"><img src="img/svgs/brands/twitter.svg" alt="" class="facebook"></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=11w3n5vy8yv4t&utm_content=e05socf" target="blank"><img src="img/svgs/brands/instagram.svg" alt="" class="facebook"></a>
                     </div>
-
-                    <!--Footer Column-->
-                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                        <div class="footer-widget info-widget">
-                            <h2>USE FULL LINKS</h2>
-                            <div class="row clearfix">
-                                <div class="column col-md-6 col-sm-6 col-xs-12">
-                                    <ul class="footer-list">
-                                        <li><a href="about.php">About Us</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Payment Plan</a></li>
-                                        <li><a href="#">Whatsapp Contact</a></li>
-                                        <li><a href="contact.php">Contact us </a></li>
-                                        <li><a href="sigin.php">Sign in </a></li>
-                                    </ul>
-                                </div>
-                                <div class="column col-md-6 col-sm-6 col-xs-12">
-                                    <ul class="footer-list">
-                                        <li><a href="">Ready to Wear</a></li>
-                                        <li><a href="#">Coutures</a></li>
-                                        <li><a href="#">Fashion School</a></li>
-                                        <li><a href="#">Online school</a></li>
-                                        <li><a href="cart.php">See Cart</a></li>
-                                        <li><a href="register.php">Register</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Footer Column-->
-                    <div class="footer-column col-md-4 col-sm-12 col-xs-12">
-                        <div class="footer-widget news-widget">
-                            <h2>Latest Products</h2>
-
-                            <article class="post">
-                                <figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/news-thumb-1.jpg" alt=""></a></figure>
-                                <div class="text"><a href="blog-single.html">Child Education in South-Africa!!</a>
-                                </div>
-                            </article>
-
-                            <article class="post">
-                                <figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/news-thumb-2.jpg" alt=""></a></figure>
-                                <div class="text"><a href="blog-single.html">Clean Water Provide by Poor
-                                        People!!</a>
-                                </div>
-                            </article>
-
-                            <article class="post">
-                                <figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/news-thumb-3.jpg" alt=""></a></figure>
-                                <div class="text"><a href="blog-single.html">We help the hunger People!!</a></div>
-                            </article>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
+            <div class="col">
+                <h4>About</h4>
+                <a href="about.php">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="myorders.php">My Orders</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="contact.php">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="login.php">Sign In</a>
+                <a href="login.php">Register</a>
+                <a href="cart.php">View Cart</a>
+                <a href="index.php?logout=1">Logout</a>
+                <a href="#"><?php if (isset($_SESSION['verified'])) {
+                                if ($_SESSION['verified'] != 1) {
+                                    echo '<p style="color:red;">Verify Account </p>';
+                                } else {
+                                    echo 'This account is verified';
+                                }
+                            } else {
+                                echo '<p style="color:green;">Not logged in</p>';
+                            }
+                            ?>
+                </a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/pay/play.jpg" alt="Google play app">
+                    <img src="img/pay/app.jpg" alt="Google play app">
+                </div>
+                <h4>Secure Payment Gateways</h4>
+                <img src="img/pay/pay.png" alt="">
+            </div>
         </div>
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="column col-md-6 col-sm-8 col-xs-12">
-                        <div class="copyright">Copyright &copy; 2017 Charity Point. All rights reserved</div>
-                    </div>
-                    <div class="social-column col-md-6 col-sm-4 col-xs-12">
-                        <ul class="social-icon-one style-two">
-                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
+        <div class="copyright">
+            <p>&copy; <script>
+                    document.write(new Date().getFullYear());
+                </script>, Oge by Oge | All Rights Reserved</p>
         </div>
     </footer>
 
-    </div>
-    <!--End pagewrapper-->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!--Scroll to top-->
-    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
 
+    <!--  isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
 
-
-    <script src="js/jquery.js"></script>
-    <!--Revolution Slider-->
-    <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script src="js/main-slider-script.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/isotope.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.fancybox-media.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/appear.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/script.js"></script>
-    <!--Google Map APi Key-->
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
-    <script src="js/map-script.js"></script>
-    <!--End Google Map APi-->
+    <script src="js/product-single.js"></script>
 
+    <!-- alertify  -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script>
+        alertify.set('notifier', 'position', 'top-right');
+        <?php if (isset($_SESSION['message'])) { ?>
+
+            alertify.success('<?= $_SESSION['message'] ?>');
+        <?php
+            unset($_SESSION['message']);
+        } ?>
+    </script>
+    <!-- alertify  -->
     </body>
 
     </html>

@@ -26,7 +26,7 @@ include("includes/header.php");
                                 <input type="number" name="year" class="form-control mb-2" placeholder="Enter Year" required>
                             </div>
                             <div class="col-md-12">
-                                <button class="btn btn-info" name="add_sales_btn" type="submit">SAVE</button>
+                                <button class="btn btn-warning" name="add_sales_btn" type="submit">SAVE</button>
                             </div>
                         </div>
                     </form>
