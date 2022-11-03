@@ -3,41 +3,41 @@
     <p>Our Other Services</p>
     <div class="service-box">
         <div class="single-service">
-            <img src="img/banner/pic-1.jpg" alt="">
+            <img src="img/banner/5.jpg" alt="">
             <div class="over-lay"></div>
             <div class="service-desc">
-                <h3>Hair Styling</h3>
+                <h3>Custom Made Wears</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
                 <button class="normal"><a href="#">See More</a></button>
             </div>
         </div>
         <div class="single-service">
-            <img src="img/banner/pic-2.jpg" alt="">
+            <img src="img/banner/4.jpg" alt="">
             <div class="over-lay"></div>
             <div class="service-desc">
-                <h3>Beard Trim</h3>
+                <h3>Ready Made wears</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
-                <button class="normal"><a href="#">See More</a></button>
+                <button class="normal"><a href="#">Shop Now</a></button>
             </div>
 
         </div>
         <div class="single-service">
-            <img src="img/banner/pic-3.jpg" alt="">
+            <img src="img/banner/7.jpg" alt="">
             <div class="over-lay"></div>
             <div class="service-desc">
-                <h3>Hair Cut</h3>
+                <h3>Fashion School</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
                 <button class="normal"><a href="#">See More</a></button>
             </div>
         </div>
         <div class="single-service">
-            <img src="img/banner/pic-4.jpg" alt="">
+            <img src="img/banner/6.jpg" alt="">
             <div class="over-lay"></div>
             <div class="service-desc">
-                <h3>Dry Shampoo</h3>
+                <h3>Online School</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
                 <button class="normal"><a href="#">See More</a></button>

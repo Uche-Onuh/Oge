@@ -58,7 +58,7 @@ $page =  substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/") +
             </a>
             <div class="navlinks">
                 <ul class="navbar-li" id="navbar">
-                    <li><a href="#" class="main <?= $page == "index.php" ? 'current' : ''; ?>">Services</a>
+                    <li><a href="#" class="main <?= $page == "services.php" ? 'current' : ''; ?>">Services</a>
                         <ul class="sub-menu">
                             <li><a href="#">Service</a></li>
                             <li><a href="#">Service</a></li>

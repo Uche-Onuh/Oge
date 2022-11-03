@@ -3,16 +3,15 @@
             <div class="col">
                 <img src="img/logo.png" alt="Exochos Nigeria Logo" class="logo">
                 <h4>Contact Details</h4>
-                <p><strong>Address:</strong> Diamond plaza 88 Mushin road, Isolo Lagos stat, Nigeria.</p>
-                <p><strong>Phone:</strong> (+234) 905 836 1341.</p>
-                <p><strong>Phone:</strong> (+234) 808 502 8709.</p>
+                <p><strong>Address:</strong> Chief Suala Ndakola street, Alaguntan, Ikota, Lagos, Nigeria.</p>
+                <p><strong>Phone:</strong> (+234) 816 326 7385</p>
                 <p><strong>Hours:</strong> 8:00 - 18:00, Mon - Sat</p>
                 <div class="follow">
                     <h4>Follow Us</h4>
                     <div class="icon">
-                        <a href="https://www.facebook.com/exochosbusinessventures" target="blank"><img src="img/svgs/brands/facebook-f.svg" alt="" class="facebook"></a>
-                        <a href="" target="blank"><img src="img/svgs/brands/twitter.svg" alt="" class="facebook"></a>
-                        <a href="https://www.instagram.com/invites/contact/?i=11w3n5vy8yv4t&utm_content=e05socf" target="blank"><img src="img/svgs/brands/instagram.svg" alt="" class="facebook"></a>
+                        <a href="https://www.facebook.com/OgebyOge" target="blank"><img src="img/svgs/brands/facebook-f.svg" alt="" class="facebook"></a>
+                        <a href="https://twitter.com/oge_by_oge" target="blank"><img src="img/svgs/brands/twitter.svg" alt="" class="facebook"></a>
+                        <a href="https://www.instagram.com/ogebyogeofficial/" target="blank"><img src="img/svgs/brands/instagram.svg" alt="" class="facebook"></a>
                     </div>
                 </div>
             </div>

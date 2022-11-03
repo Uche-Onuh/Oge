@@ -10,7 +10,7 @@
     
         <!-- about PRODUCTS BEGINS -->
 <?php
-    include("temp/_features.php")
+    // include("temp/_features.php")
 ?> 
     <!-- about PRODUCTS BEGINS -->
 
