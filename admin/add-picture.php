@@ -23,10 +23,10 @@ include("includes/header.php");
                             <form action="code.php" method="POST" enctype="multipart/form-data">
                                 <div class="row">
                                     <input type="hidden" value="<?= $data['item_id'] ?>" name="product_id">
-                                    <div class="col-md-12">
+                                    <!-- <div class="col-md-12">
                                         <label class="mb-0">Upload Main Product Images (Should be same as Main Product Image)</label>
                                         <input type="file" name="image[]" class="form-control mb-2" placeholder="Upload Product Image">
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-12">
                                         <label class="mb-0">Upload Alternative Images 1</label>
                                         <input type="file" name="image[]" class="form-control mb-2" placeholder="Upload Product Alt Image1">

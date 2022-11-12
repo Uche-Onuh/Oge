@@ -418,11 +418,10 @@ body {
   padding: 20px;
 }
 
-#sliderbtn1,
-#sliderbtn4 {
+#sliderbtn1{
   position: absolute;
-  top: 65%;
-  left: 4%;
+  top: 68%;
+  left: 61%;
   z-index: 1;
   background-color: var(--color-primary);
   font-size: 25px;

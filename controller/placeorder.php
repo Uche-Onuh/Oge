@@ -31,6 +31,7 @@ if (isset($_SESSION['user_id'])) {
         $totalPrice = 0;
         $totalWeight = 0;
         foreach ($query_run as $item) {
+            // CALCULATE SHIPPING WITH WEIGHT AND QTY
             $totalWeight += $item['qty'] * $item['pty'];
             if ($state == "Abia") {
                 $shipping = 295 * $totalWeight;
@@ -112,7 +113,7 @@ if (isset($_SESSION['user_id'])) {
         $totalPrice = $totalPrice + $shipping;
 
 
-        $tracking_no = "EXOCHOS" . rand(1111, 9999) . substr($pcode, 2);
+        $tracking_no = "BYOGE" . rand(1111, 9999) . substr($pcode, 2);
         $payment_id = "PAYMENT" . rand(0000, 9999) . substr($number, 2);
 
         $insert_query = "INSERT INTO orders(tracking_no, user_id, first_name, surname, email, phone, whatsapp, state, shipping_address, 

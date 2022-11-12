@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
 
         <section id="pro-detail" class="section-p1 product-data">
             <div class="single-pro-image">
-                <img src="img/exproducts/<?php echo $item['item_image'] ?>" alt="<?php echo $item['item_name'] ?>" width="100%" height="450px" id="main-img">
+                <img src="img/exproducts/<?php echo $item['item_image'] ?>" alt="<?php echo $item['item_name'] ?>" width="100%" height="600px" id="main-img">
                 <div class="small-img-group" style="margin-top: 30px;">
                     <div class="small-img-col">
                         <img src="img/exproducts/<?php echo $item['item_image'] ?>" class="small-img" height="120px">
@@ -45,7 +45,6 @@ if (isset($_GET['id'])) {
                     </tr>
                 </tbody>
                 <button class="normal addToCartBtn" value="<?= $item['item_id']; ?>">Add to Cart</button>
-                <button class="normal addToQuoteBtn" value="<?= $item['item_id'];  ?>">Get Quotation</button>
                 <h4>Product Details</h4>
                 <p style="margin: 5px 0;">
                     <?php echo $item['small_description'] ?? 0; ?>

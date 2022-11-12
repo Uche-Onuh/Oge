@@ -111,6 +111,13 @@ function getAllR($table)
     return $query_run = mysqli_query($conn, $query);
 }
 
+function getExtraImg($id)
+{
+    global $conn;
+    $query = "SELECT * FROM alt_img WHERE item_id='$id' LIMIT 4";
+    return $query_run = mysqli_query($conn, $query);
+}
+
 
 function redirect($url, $message)
 {
