@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 </div>
                 <input type="hidden" value="1" class="qty-input">
                 <button class="cart-btn addToCartBtn" value="<?= $item['item_id']; ?>"><img src="img/svgs/solid/cart-shopping.svg" alt="" class="cart-img"></button>
-
+            
 
             </div>
         <?php } ?>
