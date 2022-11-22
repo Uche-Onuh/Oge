@@ -40,7 +40,7 @@
                 <h3>Online School</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
-                <button class="normal"><a href="#">See More</a></button>
+                <button class="normal"><a href="https://ogebyoge-s-school-ac48.thinkific.com/" target="_blank">See More</a></button>
             </div>
         </div>
     </div>

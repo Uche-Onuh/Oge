@@ -29,7 +29,7 @@
     </div>
 </section>
 
-<section id="form-detail">
+<section id="form-detail" class="section-p1">
     <form action="contact.php" method="POST">
         <span>LEAVE A MESSAGE</span>
         <h2>We love to hear from you</h2>

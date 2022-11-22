@@ -58,11 +58,11 @@ $page =  substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/") +
             </a>
             <div class="navlinks">
                 <ul class="navbar-li" id="navbar">
-                    <li><a href="#" class="main <?= $page == "services.php" ? 'current' : ''; ?>">Services</a>
+                    <li><a href="#" class="main">Services</a>
                         <ul class="sub-menu">
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Service</a></li>
+                            <li><a href="couture.php" class="<?= $page == "couture.php"  ? 'current' : ''; ?>">Custom Made Wears</a></li>
+                            <li><a href="school.php" class="<?= $page == "school.php"  ? 'current' : ''; ?>">Fashion School</a></li>
+                            <li><a href="https://ogebyoge-s-school-ac48.thinkific.com/" target="_blank">Online School</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="main <?= $page == "product.php" ? 'current' : ''; ?>">Shop Now</a>

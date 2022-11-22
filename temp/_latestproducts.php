@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <div class="desc">
                     <span><?php echo $item['item_brand'] ?? 'unknown'; ?></span>
                     <h5><?php echo $item['item_name'] ?? 'unknown'; ?></h5>
-                    <span>Product code: <?= $item['slug'] ?></span>mb
+                    <span>Product code: <?= $item['slug'] ?></span>
                     <div class="star" style="margin-top: 5px;">
                         <img src="img/svgs/solid/star.svg">
                         <img src="img/svgs/solid/star.svg">

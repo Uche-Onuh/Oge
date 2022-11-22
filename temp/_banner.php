@@ -10,7 +10,7 @@
           
           <div class="myslider fade" style="display: block;">
               <button class="normal" id="sliderbtn1"><a href="">Book Now</a></button>
-              <img src="img/banner/bg1.jpg" style="width: 100%; height: 100%;" alt="our relaxed waiting room at luxe dental">
+              <img src="img/banner/bg1.png" style="width: 100%; height: 100%;" alt="our relaxed waiting room at luxe dental">
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

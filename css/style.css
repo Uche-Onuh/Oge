@@ -377,31 +377,6 @@ body {
   background: var(--color-primary);
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .text {
   position: absolute;
   color: #000;
@@ -418,7 +393,7 @@ body {
   padding: 20px;
 }
 
-#sliderbtn1{
+#sliderbtn1 {
   position: absolute;
   top: 68%;
   left: 61%;
@@ -454,24 +429,6 @@ body {
   background: var(--color-secondary);
 }
 
-@-webkit-keyframes posi {
-  from {
-    top: -50%;
-  }
-  to {
-    top: 40%;
-  }
-}
-
-@keyframes posi {
-  from {
-    top: -50%;
-  }
-  to {
-    top: 40%;
-  }
-}
-
 .text h1 {
   color: #eec314;
   font-weight: bold;
@@ -489,13 +446,6 @@ body {
 
 .text a {
   color: #000;
-}
-
-.slider .myslider img {
-  -webkit-animation-name: zoomin;
-  -webkit-animation-duration: 40s;
-  animation-name: zoomin;
-  animation-duration: 40s;
 }
 
 /* HERO SECTION ENDS */
@@ -739,13 +689,16 @@ body {
 
 .grid {
   flex-basis: 30%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .grid img {
   width: 100%;
   height: 250px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
   margin-bottom: 0;
 }
 
@@ -780,11 +733,16 @@ body {
 }
 
 .dec_text {
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 
 .grid-dec:hover {
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.grid-dec:hover >  img{
+  transform: scale(1.1);
+  transition: transform 1s;
 }
 
 .grid-dec a:hover {
@@ -1768,6 +1726,205 @@ footer .copyright {
   width: 100%;
 }
 
+/* couture page */
+#gallery {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#gallery img {
+  width: 23%;
+  border-radius: 20px;
+}
+
+#booking{
+  padding: 70px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-details {
+  width: 53%;
+}
+
+.contact-details h4 {
+  color: var(--color-primary);
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contact-details h1 {
+  font-size: 37px;
+  line-height: 1.5;
+}
+
+.contact-details p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contact-flexbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-details-flex {
+  max-width: 40%;
+}
+
+.contact-details-flex p {
+  margin: 12px 0;
+  max-width: 90%;
+}
+
+.contact-form {
+  width: 40%;
+  padding: 30px 25px;
+  box-shadow: 0px 0px 40px 5px rgb(0 0 0 / 6%);
+}
+
+.form_book {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form_book label {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.form_book input {
+  width: 100%;
+  height: 40px;
+  padding: 20px 0 20px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 14px;
+}
+
+.form_book select{
+  width: 100%;
+  padding: 12px 0 12px 10px;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: gray;
+  outline: none;
+}
+
+.form_book select option{
+  font-size: 16px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+
+.form_book button {
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--color-primary);
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form_book button:hover {
+  background: var(--color-secondary);
+  color: #000;
+  transform: translateY(20px);
+}
+
+/* school page */
+#cards{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card{
+  width: 31%;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px 5px rgb(0 0 0 / 6%);
+  background-image: linear-gradient(to left top, #1414e1, #033fe9, #1e5bee, #3d74ef, #5c8bed, #569ef3, #5aaff7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: all 0.7s ease-in-out;
+}
+
+.card h1{
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+}
+
+.card p{
+  color: #efefef;
+  font-size: 15px;
+  line-height: 0.5;
+}
+
+.card p:last-of-type{
+  margin-bottom: 30px;
+}
+
+.card:nth-of-type(2){
+  background-image: linear-gradient(to left top, #f57f18, #f57f18, #f57f18, #f57f18, #f57f18, #e8910a, #dba00b, #ccae1c, #a9c94d, #86de84, #66eebd, #5ffbf1);
+}
+
+.card:last-of-type{
+  background-image: linear-gradient(to left top, #f024f0, #f024f0, #f024f0, #f024f0, #f024f0, #f90dd7, #fe00bf, #ff00a9, #ff2b7c, #ff6151, #ff9129, #ffbb00);
+}
+
+.card a{
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  padding: 15px 25px;
+  background: var(--color-primary);
+  font-size: 12px;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.card a:hover{
+  background: var(--color-secondary);
+  transition: all 0.5s;
+}
+
 /* media querris for index page */
 @media (max-width: 1350px) {
   .navbar-li {
@@ -1851,10 +2008,18 @@ footer .copyright {
   .container1 {
     width: 100%;
   }
+
+  .form_book button {
+    font-size: 10px;
+  }
+
+  .card a{
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1000px) {
-   .container1 {
+  .container1 {
     width: 80%;
     justify-content: center;
     flex-direction: column;
@@ -1865,9 +2030,15 @@ footer .copyright {
   }
 
   .grid-dec {
-   margin: 20px 0;
+    margin: 20px 0;
   }
 
+  .card{
+    width: 48%;
+  }
+  .form_book button {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1990,7 +2161,43 @@ footer .copyright {
   .single-service:hover .service-desc {
     bottom: 20%;
   }
+
+  #booking {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .form button {
+    font-size: 12px;
+    padding: 20px 25px;
+    border-radius: 5px;
+    width: 30%;
+  }
+
 }
+
+@media (max-width: 800px) {
+  #gallery img {
+    width: 48%;
+  }
+}
+
+@media (max-width: 660px) {
+  .card{
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 550px) {
   #bars {
@@ -2022,7 +2229,7 @@ footer .copyright {
   }
 
   .grid-dec {
-   margin: 20px 0;
+    margin: 20px 0;
   }
 
   .text a {
@@ -2171,6 +2378,10 @@ footer .copyright {
   }
 
   #checkout .container .checkout-details .form .address {
+    width: 100%;
+  }
+
+  #gallery img {
     width: 100%;
   }
 }
