@@ -22,25 +22,31 @@
 <section id="cards" class="section-p1">
     <div class="card">
         <h1>Beginner</h1>
-        <p>module number</p>
-        <p>number of projects</p>
-        <p>length of program</p>
+        <hr>
+        <p>6 Modules of Course Work</p>
+        <p>4 Technical Skill Tests</p>
+        <p>3 Class Projects</p>
+        <p>3 Months Program</p>
         <h3>&#8358; 200,000</h3>
         <a href="#" download>Download Full Course Outline</a>
     </div>
     <div class="card">
         <h1>Intermediate</h1>
-        <p>module number</p>
-        <p>number of projects</p>
-        <p>length of program</p>
+        <hr>
+        <p>9 Modules of Course Work</p>
+        <p>7 Technical Skill Tests</p>
+        <p>9 Class Projects</p>
+        <p>6 Months Program</p>
         <h3>&#8358; 400,000</h3>
         <a href="#" download>Download Full Course Outline</a>
     </div>
     <div class="card">
         <h1>Mastery</h1>
-        <p>module number</p>
-        <p>number of projects</p>
-        <p>length of program</p>
+        <hr>
+        <p>12 Modules of Course work</p>
+        <p>10 Technical Skill Tests</p>
+        <p>15 Class Project</p>
+        <p>9 Months Program</p>
         <h3>&#8358; 600,000</h3>
         <a href="docs/Nine months Training syllabus.docx" download>Download Full Course Outline</a>
     </div>

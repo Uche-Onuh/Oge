@@ -1890,6 +1890,11 @@ footer .copyright {
   text-align: center;
 }
 
+.card hr{
+  width: 70%;
+  margin: 0 auto;
+}
+
 .card p{
   color: #efefef;
   font-size: 15px;
