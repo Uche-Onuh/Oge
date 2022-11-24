@@ -17,7 +17,14 @@
                      <input type="text" placeholder="Enter your Whatsapp Phone Number" name="wnumber">
                      <input type="number" placeholder="Postal Code" required name="pcode">
                      <select name="state" id="state" required class="address">
-                         <option selected disabled>State of Residence</option>
+                         <option selected disabled>Select Your Region</option>
+                         <option disabled class="disabled">International</option>
+                         <option value="Europe">Europe</option>
+                         <option value="">North America</option>
+                         <option value="">South America</option>
+                         <option value="">Asia</option>
+                         <option value="">Africa</option>
+                         <option disabled class="disabled">Nigeria</option>
                          <option value="Abia">Abia</option>
                          <option value="Abuja">Abuja</option>
                          <option value="Adamawa">Adamawa</option>
@@ -66,7 +73,6 @@
                      <?php
                         $items = getCartItems();
                         $totalPrice = 0;
-                        $totalweight = 0;
                         foreach ($items as $item) {
                         ?>
                          <div class="prod product-data">
@@ -84,19 +90,14 @@
                          <hr>
                      <?php
                             $totalPrice += $item['item_price'] * $item['qty'];
-                            $totalweight += $item['qty'] *  $item['pty'];
                         }
                         ?>
-                     <div class="total_price" id="total">
-                         <h4>Total Purchase Weight:</h4>
-                         <p> <?= $totalweight ?></p>
-                     </div>
                      <div class="total_price" id="total">
                          <h4>Total Price:</h4>
                          <p>&#8358; <?= number_format($totalPrice); ?></p>
                      </div>
                      <hr>
-                     <p style="text-align: center; font-size: 13px;">Delivery fee applied By Purchase Weight and State of Residence</p>
+                     <p style="text-align: center; font-size: 13px;">Delivery fee applied By Shipping Region</p>
                      <button class="normal" type="submit" name="placeOrderBtn">Confirm and Place Order</button>
                  </div>
          </form>

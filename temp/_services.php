@@ -9,7 +9,7 @@
                 <h3>Custom Made Wears</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
-                <button class="normal"><a href="#">See More</a></button>
+                <button class="normal"><a href="couture.php">See More</a></button>
             </div>
         </div>
         <div class="single-service">
@@ -19,7 +19,7 @@
                 <h3>Ready Made wears</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
-                <button class="normal"><a href="#">Shop Now</a></button>
+                <button class="normal"><a href="product.php?category=Dresses">Shop Now</a></button>
             </div>
 
         </div>
@@ -30,7 +30,7 @@
                 <h3>Fashion School</h3>
                 <hr>
                 <p>this is text under the description of barber foundation this is text under the decription of barber foundation</p>
-                <button class="normal"><a href="#">See More</a></button>
+                <button class="normal"><a href="school.php">See More</a></button>
             </div>
         </div>
         <div class="single-service">

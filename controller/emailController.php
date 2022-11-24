@@ -46,7 +46,7 @@ function sendVerificationEmail($userEmail, $token)
             </html>';
   // Create a message
   $email = (new Email())
-    ->from('info@exochos.com.ng')
+    ->from('#')
     ->to($userEmail)
     ->subject('Verify  your Email adress')
     ->html($body);
@@ -83,7 +83,7 @@ function sendPasswordResetLink($userEmail, $token)
             </html>';
   // Create a message
   $email = (new Email())
-    ->from('info@exochos.com.ng')
+    ->from('#')
     ->to($userEmail)
     ->subject('Password reset')
     ->html($body);
@@ -296,7 +296,7 @@ function sendOrderConfirmation($userEmail, $reference, $payment_id, $tracking_no
 </html>';
   // Create a message
   $email = (new Email())
-    ->from('sales@exochos.com.ng')
+    ->from('#')
     ->to($userEmail)
     ->subject('Order Confirmation Mail')
     ->html($body);

@@ -24,87 +24,84 @@ if (isset($_SESSION['user_id'])) {
 
         $user_id = $_SESSION['user_id'];
 
-        $query = "SELECT  c.cart_id as cid, c.item_id, c.qty, p.item_id , p.item_name, p.item_price, p.item_image, p.qty as pty
+        $query = "SELECT  c.cart_id as cid, c.item_id, c.qty, p.item_id , p.item_name, p.item_price, p.item_image
         FROM cart c, product p WHERE c.item_id = p.item_id AND c.user_id ='$user_id' ORDER BY c.cart_id DESC";
         $query_run = mysqli_query($conn, $query);
 
         $totalPrice = 0;
-        $totalWeight = 0;
         foreach ($query_run as $item) {
-            // CALCULATE SHIPPING WITH WEIGHT AND QTY
-            $totalWeight += $item['qty'] * $item['pty'];
             if ($state == "Abia") {
-                $shipping = 295 * $totalWeight;
+                $shipping = 295;
             } else if ($state == "Adamawa") {
-                $shipping = 650 * $totalWeight;
+                $shipping = 650;
             } else if ($state == "Abuja") {
-                $shipping = 332 * $totalWeight;
+                $shipping = 332;
             } else if ($state == "Akwa Ibom") {
-                $shipping = 329 * $totalWeight;
+                $shipping = 329;
             } else if ($state == "Anambra") {
-                $shipping = 255 * $totalWeight;
+                $shipping = 255;
             } else if ($state == "Bauchi") {
-                $shipping = 512 * $totalWeight;
+                $shipping = 512;
             } else if ($state == "Bayelsa") {
-                $shipping = 570 * $totalWeight;
+                $shipping = 570;
             } else if ($state == "Benue") {
-                $shipping = 362 * $totalWeight;
+                $shipping = 362;
             } else if ($state == "Borno") {
-                $shipping = 740 * $totalWeight;
+                $shipping = 740;
             } else if ($state == "Cross River") {
-                $shipping = 357 * $totalWeight;
+                $shipping = 357;
             } else if ($state == "Delta") {
-                $shipping = 186 * $totalWeight;
+                $shipping = 186;
             } else if ($state == "Ebonyi") {
-                $shipping = 316 * $totalWeight;
+                $shipping = 316;
             } else if ($state == "Edo") {
-                $shipping = 155 * $totalWeight;
+                $shipping = 155;
             } else if ($state == "Ekiti") {
-                $shipping = 154 * $totalWeight;
+                $shipping = 154;
             } else if ($state == "Enugu") {
-                $shipping = 286 * $totalWeight;
+                $shipping = 286;
             } else if ($state == "Gombe") {
-                $shipping = 592 * $totalWeight;
+                $shipping = 592;
             } else if ($state == "Imo") {
-                $shipping = 261 * $totalWeight;
+                $shipping = 261;
             } else if ($state == "Jigawa") {
-                $shipping = 544 * $totalWeight;
+                $shipping = 544;
             } else if ($state == "Kaduna") {
-                $shipping = 390 * $totalWeight;
+                $shipping = 390;
             } else if ($state == "Kano") {
-                $shipping = 519 * $totalWeight;
+                $shipping = 519;
             } else if ($state == "Kebbi") {
-                $shipping = 413 * $totalWeight;
+                $shipping = 413;
             } else if ($state == "Kogi") {
-                $shipping = 247 * $totalWeight;
+                $shipping = 247;
             } else if ($state == "Kwara") {
-                $shipping = 158 * $totalWeight;
+                $shipping = 158;
             } else if ($state == "Lagos") {
-                $shipping = 9 * $totalWeight;
+                $shipping = 2000;
             } else if ($state == "Nasarawa") {
-                $shipping = 366 * $totalWeight;
+                $shipping = 366;
             } else if ($state == "Niger") {
-                $shipping = 403 * $totalWeight;
+                $shipping = 403;
             } else if ($state == "Ogun") {
-                $shipping = 28 * $totalWeight;
+                $shipping = 28;
             } else if ($state == "Ondo") {
-                $shipping = 108 * $totalWeight;
+                $shipping = 108;
             } else if ($state == "Osun") {
-                $shipping = 109 * $totalWeight;
+                $shipping = 109;
             } else if ($state == "Oyo") {
-                $shipping = 99 * $totalWeight;
+                $shipping = 99;
             } else if ($state == "Plateau") {
-                $shipping = 444 * $totalWeight;
+                $shipping = 444;
             } else if ($state == "Rivers") {
-                $shipping = 278 * $totalWeight;
+                $shipping = 278;
             } else if ($state == "Sokoto") {
-                $shipping = 465 * $totalWeight;
+                $shipping = 465;
             } else if ($state == "Taraba") {
-                $shipping = 531 * $totalWeight;
+                $shipping = 531;
             } else if ($state == "Yobe") {
-                $shipping = 689 * $totalWeight;
+                $shipping = 689;
             } else if ($state == "Zamfara") {
-                $shipping = 449 * $totalWeight;
+                $shipping = 449;
             }
 
             $totalPrice += ($item['item_price'] * $item['qty']);

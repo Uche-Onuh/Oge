@@ -1,8 +1,6 @@
   <!-- HERO SECTION BEGINS -->
   <section class="hero">
       <div class="slider">
-          <div class="shadow"></div>
-          
           <div class="myslider fade">
               <button class="normal" id="sliderbtn3"><a href="#">Shop Now</a></button>
               <img src="img/banner/bg3.jpg" style="width: 100%; height: 100%;" alt="our professional staff at luxe dental">

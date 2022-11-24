@@ -1364,6 +1364,18 @@ footer .copyright {
   outline: none;
 }
 
+#checkout .container .checkout-details .form select option{
+  font-size: 17px;
+}
+
+#checkout .disabled{
+  color: #fff;
+  font-size: 20px;
+  background: #000;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
 #checkout .container .checkout-details .form input:active,
 #checkout .container .checkout-details .form select:active {
   outline: none;
@@ -1378,7 +1390,7 @@ footer .copyright {
 #checkout .container .checkout-details .checkout-prod .prod img {
   margin-right: 30px;
   border: 1px solid var(--color-secondary);
-  padding: 8px;
+  padding: 5px;
 }
 
 #checkout .container .checkout-details .checkout-prod .prod .name {
@@ -1738,6 +1750,7 @@ footer .copyright {
 #gallery img {
   width: 23%;
   border-radius: 20px;
+  height: 400px;
 }
 
 #booking{
@@ -1893,6 +1906,8 @@ footer .copyright {
 .card hr{
   width: 70%;
   margin: 0 auto;
+  background: #fff;
+  border: 1px solid #fff;
 }
 
 .card p{

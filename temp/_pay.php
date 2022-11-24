@@ -33,7 +33,7 @@ $amount = $data['total_price'];
 
         <script>
             function payPageWithPaystack() {
-                const api = "pk_live_86408a11baad06a0548322683237fb459c712316";
+                const api = "pk_test_bc5d415fc4aae8f20550da17792634b26540b09c";
                 var handler = PaystackPop.setup({
                     key: api,
                     email: "<?php echo $email; ?>",

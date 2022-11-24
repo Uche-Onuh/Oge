@@ -8,37 +8,36 @@
 <section id="about-head" class="section-p1">
     <img src="img/banner/5.jpg" alt="Custom Oge by Oge attire">
     <div>
-        <h2>Create</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat magnam architecto autem ex, aspernatur quaerat! Vel, ullam nulla obcaecati officia ab commodi iste necessitatibus sapiente nesciunt ad numquam earum quia.</p>
+        <h2>Unique outfits for Unique Women</h2>
+        <p>It takes seconds to make a 1st impression and your clothes help cement an unforgettable memory in the minds of those you meet.</p>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, eveniet beatae nihil cumque perspiciatis voluptatem tenetur ducimus maxime, incidunt eligendi id et? Eaque maxime quis, veritatis asperiores ipsa natus aperiam.</p>
+        <p>Make an instant statement looking at your unique, most beautiful self.</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, numquam placeat. Quas aliquid molestiae atque quaerat tenetur a culpa amet corrupti officiis nisi quos quod explicabo rem, quis harum repellat.</p>
+        <p>Make a statement of your Personal style with distinctive fabrics, hand-tailored details, and style-oriented outfits with location and occasion affecting the outcome of the outfit made just for You.</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, numquam placeat. Quas aliquid molestiae atque quaerat tenetur a culpa amet corrupti officiis nisi quos quod explicabo rem, quis harum repellat.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, numquam placeat. Quas aliquid molestiae atque quaerat tenetur a culpa amet corrupti officiis nisi quos quod explicabo rem, quis harum repellat.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, numquam placeat. Quas aliquid molestiae atque quaerat tenetur a culpa amet corrupti officiis nisi quos quod explicabo rem, quis harum repellat.</p>
+        <p>We at Oge by Oge pride ourselves in delivering a woman's personality and choice through the outfits we design for Her.
+        </p>
     </div>
 </section>
 
 <section id="gallery" class="section-p1">
-    <img src="img/banner/5.jpg" alt="Custom Oge by Oge attire">
-    <img src="img/banner/5.jpg" alt="Custom Oge by Oge attire">
-    <img src="img/banner/5.jpg" alt="Custom Oge by Oge attire">
-    <img src="img/banner/5.jpg" alt="Custom Oge by Oge attire">
+    <img src="img/banner/6.jpg" alt="Custom Oge by Oge attire">
+    <img src="img/banner/8.jpg" alt="Custom Oge by Oge attire">
+    <img src="img/banner/9.jpg" alt="Custom Oge by Oge attire">
+    <img src="img/banner/10.jpg" alt="Custom Oge by Oge attire">
 </section>
 
 
 <section id="booking" class="section-p1">
     <div class="contact-details">
         <h1>Do You Have A Design In mind? <br> Contact Our Support Team</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptas! Omnis itaque expedita quidem non impedit voluptas doloremque error fugiat corporis reiciendis illum vero fugit hic rerum ipsum veniam, dolorum ab repudiandae, totam odit tenetur? Earum praesentium recusandae saepe ab!</p>
+        <p>A question means we have caught your interest, so let us help you finally decide that, we at Oge By Oge are exactly what you need.</p>
+        <p>Send in your questions Now!</p>
+        <p>We can't wait to hear from you!</p>
         <div class="contact-flexbox">
             <div class="contact-details-flex">
                 <h4>Phone Number</h4>
-                <p><a href="tel:+2349004564353">+2349004564353</a></p>
+                <p><a href="tel:+234 816 326 7385">(+234) 816 326 7385</a></p>
 
                 <h4>Email</h4>
                 <p><a href="mailto:hairday@gmail.com">hairday@gmail.com</a></p>
