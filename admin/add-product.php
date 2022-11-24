@@ -41,25 +41,17 @@ include("includes/header.php");
                                 <input type="text" name="slug" class="form-control mb-2" placeholder="Enter Product Code" required>
                             </div>
                             <div class="col-md-12">
-                                <label class="mb-0">Product details</label>
-                                <textarea name="small_description" id="" cols="30" rows="5" placeholder="Enter Product details" class="form-control mb-2"></textarea>
+                                <label class="mb-0">Small description</label>
+                                <textarea name="small_description" id="" cols="30" rows="5" placeholder="Enter Small Description" class="form-control mb-2"></textarea>
                             </div>
                             <div class="col-md-12">
-                                <label class="mb-0">Product perfomance</label>
-                                <textarea name="description" id="" cols="30" rows="5" placeholder="Enter Product perfomance" class="form-control mb-2" required></textarea>
-                            </div>
-                            <div class="col-md-12">
-                                <label class="mb-0">Product Specification</label>
-                                <textarea name="meta_description" id="" cols="30" rows="5" placeholder="Enter Product Specification" class="form-control mb-2"></textarea>
+                                <label class="mb-0">Product Description</label>
+                                <textarea name="description" id="" cols="30" rows="5" placeholder="Enter Product Description" class="form-control mb-2" required></textarea>
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-0">Upload Image</label>
                                 <input type="file" name="image" class="form-control mb-2" placeholder="Upload Product image" required>
                             </div>
-                            <!-- <div class="col-md-6">
-                                <label class="mb-0">Upload Multiple Alt Images</label>
-                                <input type="file" name="image[]" class="form-control mb-2" placeholder="Upload Product image" required multiple>
-                            </div> -->
                             <div class="col-md-6">
                                 <label class="mb-0">Item Brand</label>
                                 <input type="text" name="item_brand" class="form-control mb-2" placeholder="Enter Product Brand" required>
@@ -89,6 +81,10 @@ include("includes/header.php");
                             <div class="col-md-12">
                                 <label class="mb-0">Meta Title</label>
                                 <input type="text" name="meta_title" class="form-control mb-2" placeholder="Enter Meta title">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="mb-0">Meta Description</label>
+                                <textarea name="meta_description" id="" cols="30" rows="5" placeholder="Enter Meta Description" class="form-control mb-2"></textarea>
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-0">Item Tags</label>

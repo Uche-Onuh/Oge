@@ -74,6 +74,12 @@ $data = mysqli_fetch_array($orderData);
                                             </div>
                                         </div>
                                         <div class="col-md-12 mb-2">
+                                            <label for="" class="fw-bold">Region :</label>
+                                            <div class="border p-2">
+                                                <?= $data['state'] ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-2">
                                             <label for="" class="fw-bold">Payment id :</label>
                                             <div class="border p-2">
                                                 <?= $data['payment_id'] ?>
@@ -90,7 +96,7 @@ $data = mysqli_fetch_array($orderData);
 
                                 <div class="col-md-6">
                                     <h4>Order Items</h4>
-                                    <hr>
+                                    <hr color="blue">
 
                                     <table class="table">
                                         <thead>

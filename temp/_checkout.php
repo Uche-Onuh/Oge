@@ -19,11 +19,19 @@
                      <select name="state" id="state" required class="address">
                          <option selected disabled>Select Your Region</option>
                          <option disabled class="disabled">International</option>
+                         <option value="UK">United Kingdom</option>
                          <option value="Europe">Europe</option>
-                         <option value="">North America</option>
-                         <option value="">South America</option>
-                         <option value="">Asia</option>
-                         <option value="">Africa</option>
+                         <option value="USA">USA</option>
+                         <option value="Canada">Canada</option>
+                         <option value="America">North America</option>
+                         <option value="South America">South America</option>
+                         <option value="Asia">Asia</option>
+                         <option value="Carribbeans">Carribbeans</option>
+                         <option value="Australia">Australia</option>
+                         <option value="NZ">New Zealand</option>
+                         <option value="North Africa">North Africa</option>
+                         <option value="South Africa">South Africa</option>
+                         <option value="Africa">Rest of Africa</option>
                          <option disabled class="disabled">Nigeria</option>
                          <option value="Abia">Abia</option>
                          <option value="Abuja">Abuja</option>

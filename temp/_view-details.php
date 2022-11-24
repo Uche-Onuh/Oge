@@ -20,7 +20,11 @@ if (isset($_GET['t'])) {
 }
 
 $data = mysqli_fetch_array($orderData);
-
+if($data['reference'] !== ""){
+    $payment_status = "Paid";
+}else{
+    $payment_status = "Pending";
+}
 ?>
 <section id="page-header">
     <h2>#view orders</h2>
@@ -43,6 +47,7 @@ $data = mysqli_fetch_array($orderData);
                     <p>Contact no : <?= $data['phone'] ?></p>
                     <p>Shipping Address : <?= $data['shipping_address'] ?></p>
                     <p>Payment id : <?= $data['payment_id'] ?></p>
+                    <p>Payment status: <?= $payment_status?></p>
                     <p>Payment reference no : <?= $data['reference'] ?></p>
                 </div>
                 <div class="checkout-prod">

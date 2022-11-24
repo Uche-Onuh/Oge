@@ -73,7 +73,7 @@
                </tr>
                <tr>
                    <td>Delivery Fee</td>
-                   <td>Rates applied by purchase weight and state of residence</td>
+                   <td>Rates applied by Delivery Region</td>
                </tr>
                <tr>
                    <td><strong>Total</strong></td>

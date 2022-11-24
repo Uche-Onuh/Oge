@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
                 <img src="img/exproducts/<?php echo $item['item_image'] ?>" alt="<?php echo $item['item_name'] ?>" width="100%" height="600px" id="main-img">
                 <div class="small-img-group" style="margin-top: 30px;">
                     <div class="small-img-col">
-                        <img src="img/exproducts/<?php echo $item['item_image'] ?>" class="small-img" height="120px">
+                        <img src="img/exproducts/<?php echo $item['item_image'] ?>" class="small-img" height="120px" alt="<?php echo $item['item_name'] ?>">
                     </div>
                     <?php
                     if (mysqli_num_rows($altImg) > 0) {
@@ -47,15 +47,7 @@ if (isset($_GET['id'])) {
                 <button class="normal addToCartBtn" value="<?= $item['item_id']; ?>">Add to Cart</button>
                 <h4>Product Details</h4>
                 <p style="margin: 5px 0;">
-                    <?php echo $item['small_description'] ?? 0; ?>
-                </p>
-                <h4>Product Perfomance</h4>
-                <p style="margin: 5px 0;">
                     <?php echo $item['description'] ?? 0; ?>
-                </p>
-                <h4>Product Specification</h4>
-                <p style="margin: 5px 0;">
-                    <?php echo $item['meta_description'] ?? 0; ?>
                 </p>
             </div>
         </section>

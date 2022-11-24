@@ -51,16 +51,12 @@ include("includes/header.php");
                                         <input type="text" name="slug" class="form-control mb-2" value="<?= $data['slug'] ?>" placeholder="Enter Product Code" required>
                                     </div>
                                     <div class="col-md-12">
-                                        <label class="mb-0">Product details</label>
-                                        <textarea name="small_description" id="" cols="30" rows="5" placeholder="Enter Product details" class="form-control mb-2"><?= $data['small_description'] ?></textarea>
+                                        <label class="mb-0">Small Description</label>
+                                        <textarea name="small_description" id="" cols="30" rows="5" placeholder="Enter Small Description" class="form-control mb-2"><?= $data['small_description'] ?></textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <label class="mb-0">Product perfomance</label>
-                                        <textarea name="description" id="" cols="30" rows="5" placeholder="Enter Product perfomance" class="form-control mb-2" required><?= $data['description'] ?></textarea>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label class="mb-0">Product Specification</label>
-                                        <textarea name="meta_description" id="" cols="30" rows="5" placeholder="Enter Product Specification" class="form-control mb-2"><?= $data['meta_description'] ?></textarea>
+                                        <label class="mb-0">Product Description</label>
+                                        <textarea name="description" id="" cols="30" rows="5" placeholder="Enter Product Description" class="form-control mb-2" required><?= $data['description'] ?></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="mb-0">Price</label>
@@ -98,6 +94,10 @@ include("includes/header.php");
                                     <div class="col-md-12">
                                         <label class="mb-0">Meta Title</label>
                                         <input type="text" name="meta_title" class="form-control mb-2" value="<?= $data['meta_title'] ?>" placeholder="Enter Meta title">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="mb-0">Meta Description</label>
+                                        <textarea name="meta_description" id="" cols="30" rows="5" placeholder="Enter Meta Description" class="form-control mb-2"><?= $data['meta_description'] ?></textarea>
                                     </div>
                                     <div class="col-md-12">
                                         <label class="mb-0">Item Tags</label>

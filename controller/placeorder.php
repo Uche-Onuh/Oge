@@ -31,77 +31,103 @@ if (isset($_SESSION['user_id'])) {
         $totalPrice = 0;
         foreach ($query_run as $item) {
             if ($state == "Abia") {
-                $shipping = 295;
+                $shipping = 3000;
+            } else if ($state == "UK") {
+                $shipping = 33000;
+            } else if ($state == "Europe") {
+                $shipping = 46800;
+            } else if ($state == "USA") {
+                $shipping = 42600;
+            } else if ($state == "Canada") {
+                $shipping = 42600;
+            } else if ($state == "America") {
+                $shipping = 42600;
+            } else if ($state == "South America") {
+                $shipping = 61800;
+            } else if ($state == "Asia") {
+                $shipping = 57640;
+            } else if ($state == "Carribbeans") {
+                $shipping = 61800;
+            } else if ($state == "Australia") {
+                $shipping = 57640;
+            } else if ($state == "NZ") {
+                $shipping = 61800;
+            } else if ($state == "North Africa") {
+                $shipping = 47600;
+            } else if ($state == "South Africa") {
+                $shipping = 47600;
+            } else if ($state == "Africa") {
+                $shipping = 35400;
             } else if ($state == "Adamawa") {
-                $shipping = 650;
+                $shipping = 3000;
             } else if ($state == "Abuja") {
-                $shipping = 332;
+                $shipping = 5600;
             } else if ($state == "Akwa Ibom") {
-                $shipping = 329;
+                $shipping = 3000;
             } else if ($state == "Anambra") {
-                $shipping = 255;
+                $shipping = 3000;
             } else if ($state == "Bauchi") {
-                $shipping = 512;
+                $shipping = 3000;
             } else if ($state == "Bayelsa") {
-                $shipping = 570;
+                $shipping = 3000;
             } else if ($state == "Benue") {
-                $shipping = 362;
+                $shipping = 3000;
             } else if ($state == "Borno") {
-                $shipping = 740;
+                $shipping = 3000;
             } else if ($state == "Cross River") {
-                $shipping = 357;
+                $shipping = 3000;
             } else if ($state == "Delta") {
-                $shipping = 186;
+                $shipping = 3000;
             } else if ($state == "Ebonyi") {
-                $shipping = 316;
+                $shipping = 3000;
             } else if ($state == "Edo") {
-                $shipping = 155;
+                $shipping = 3000;
             } else if ($state == "Ekiti") {
-                $shipping = 154;
+                $shipping = 3000;
             } else if ($state == "Enugu") {
-                $shipping = 286;
+                $shipping = 3000;
             } else if ($state == "Gombe") {
-                $shipping = 592;
+                $shipping = 3000;
             } else if ($state == "Imo") {
-                $shipping = 261;
+                $shipping = 3000;
             } else if ($state == "Jigawa") {
-                $shipping = 544;
+                $shipping = 3000;
             } else if ($state == "Kaduna") {
-                $shipping = 390;
+                $shipping = 5600;
             } else if ($state == "Kano") {
-                $shipping = 519;
+                $shipping = 3000;
             } else if ($state == "Kebbi") {
-                $shipping = 413;
+                $shipping = 3000;
             } else if ($state == "Kogi") {
-                $shipping = 247;
+                $shipping = 3000;
             } else if ($state == "Kwara") {
-                $shipping = 158;
+                $shipping = 3000;
             } else if ($state == "Lagos") {
-                $shipping = 2000;
+                $shipping = 3000;
             } else if ($state == "Nasarawa") {
-                $shipping = 366;
+                $shipping = 3000;
             } else if ($state == "Niger") {
-                $shipping = 403;
+                $shipping = 3000;
             } else if ($state == "Ogun") {
-                $shipping = 28;
+                $shipping =3000;
             } else if ($state == "Ondo") {
-                $shipping = 108;
+                $shipping = 3000;
             } else if ($state == "Osun") {
-                $shipping = 109;
+                $shipping = 3000;
             } else if ($state == "Oyo") {
-                $shipping = 99;
+                $shipping =3000;
             } else if ($state == "Plateau") {
-                $shipping = 444;
+                $shipping = 3000;
             } else if ($state == "Rivers") {
-                $shipping = 278;
+                $shipping = 5600;
             } else if ($state == "Sokoto") {
-                $shipping = 465;
+                $shipping = 3000;
             } else if ($state == "Taraba") {
-                $shipping = 531;
+                $shipping = 3000;
             } else if ($state == "Yobe") {
-                $shipping = 689;
+                $shipping = 3000;
             } else if ($state == "Zamfara") {
-                $shipping = 449;
+                $shipping = 3000;
             }
 
             $totalPrice += ($item['item_price'] * $item['qty']);
