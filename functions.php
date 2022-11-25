@@ -116,7 +116,7 @@ function getCartItems()
     }
 
 
-    $query = "SELECT  c.cart_id as cid, c.item_id, c.qty, p.item_id , p.item_name, p.item_price, p.item_image, p.qty as pty
+    $query = "SELECT  c.cart_id as cid, c.item_id, c.qty, c.size, p.item_id , p.item_name, p.item_price, p.item_image, p.qty as pty
     FROM cart c, product p WHERE c.item_id = p.item_id AND c.user_id ='$user' ORDER BY c.cart_id DESC";
     return $query_run = mysqli_query($conn, $query);
 }

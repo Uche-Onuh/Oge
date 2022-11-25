@@ -19,9 +19,9 @@
             <div class="col">
                 <h4>About</h4>
                 <a href="about.php">About Us</a>
-                <a href="#">Delivery Information</a>
+                <a href="faqs.php">FAQs</a>
                 <a href="myorders.php">My Orders</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="terms&conditions.php">Terms & Conditions</a>
                 <a href="contact.php">Contact Us</a>
             </div>
 

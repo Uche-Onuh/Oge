@@ -88,7 +88,8 @@
                              <div>
                                  <p class="name"><?= $item['item_name'] ?></p>
                                  <div class="price">&#8358; <?= number_format($item['item_price']); ?></div>
-                                 <p>QTY: <?= $item['qty'] ?></p>
+                                 <p><b>Size:</b> <?= $item['size'] ?></p>
+                                 <p><b>QTY:</b> <?= $item['qty'] ?></p>
                              </div>
                              <div id="sub">
                                  <h4>Subtotal</h4>

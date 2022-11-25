@@ -14,6 +14,7 @@
                    <td>Remove</td>
                    <td>Image</td>
                    <td>Product</td>
+                   <td>Size</td>
                    <td>Price</td>
                    <td>Quantity</td>
                    <td>Subtotal</td>
@@ -32,7 +33,17 @@
                                <td><button class="deleteItem normal" value="<?= $item['cid'] ?>" style="padding: 5px 10px;"><span class="material-symbols-outlined">delete</span></button></td>
                                <td><img src="img/exproducts/<?= $item['item_image'] ?>" alt="<?= $item['item_name'] ?>"></td>
                                <td><?= $item['item_name'] ?></td>
-
+                               <td>
+                                   <select name="size" class="updateSize">
+                                       <option selected disabled><?= $item['size'] ?></option>
+                                       <option value="Size 6">Size 6</option>
+                                       <option value="Size 8">Size 8</option>
+                                       <option value="Size 10">Size 10</option>
+                                       <option value="Size 12">Size 12</option>
+                                       <option value="Size 14">Size 14</option>
+                                       <option value="Size 16">Size 16</option>
+                                   </select>
+                               </td>
                                <td>&#8358; <?= number_format($item['item_price']) ?></td>
                                <td>
                                    <input type="hidden" class="prodId" value="<?= $item['item_id'] ?>">

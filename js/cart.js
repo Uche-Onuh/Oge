@@ -30,6 +30,7 @@ $(document).ready(function () {
     e.preventDefault();
 
     var qty = $(this).closest(".product-data").find(".qty-input").val();
+    var size = $(this).closest(".product-data").find(".size").val();
     var prod_id = $(this).val();
 
     $.ajax({
@@ -38,6 +39,7 @@ $(document).ready(function () {
       data: {
         item_id: prod_id,
         item_qty: qty,
+        size: size,
         scope: "add",
       },
       success: function (response) {
@@ -111,17 +113,17 @@ $(document).ready(function () {
   });
 
   // update quotation qty
-  $(document).on("click", ".updateQtyQ", function () {
-    var qty = $(this).closest(".product-data").find(".qty-input").val();
+  $(document).on("click", ".updateSize", function () {
+    var size = $(this).closest(".product-data").find(".updateSize").val();
     var prod_id = $(this).closest(".product-data").find(".prodId").val();
 
     $.ajax({
       method: "POST",
-      url: "controller/handleQuotes.php",
+      url: "controller/handleCart.php",
       data: {
         item_id: prod_id,
-        item_qty: qty,
-        scope: "updateQ",
+        size: size,
+        scope: "updateSize",
       },
       success: function (response) {
         $(".quote").load(location.href + " .quote");

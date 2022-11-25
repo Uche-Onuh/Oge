@@ -748,7 +748,7 @@ body {
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.grid-dec:hover >  img{
+.grid-dec:hover > img {
   transform: scale(1.1);
   transition: transform 1s;
 }
@@ -1207,15 +1207,25 @@ footer .copyright {
   width: 250px;
   text-align: center;
 }
-#cart table td:nth-child(4),
+
+#cart table td:nth-child(4) {
+  width: 250px;
+  text-align: center;
+}
 #cart table td:nth-child(5),
-#cart table td:nth-child(6) {
+#cart table td:nth-child(6),
+#cart table td:nth-child(7) {
   width: 150px;
   text-align: center;
 }
 
-#cart table td:nth-child(5) input {
+#cart table td input {
   width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table td select {
+  width: 100px;
   padding: 10px 5px 10px 15px;
 }
 
@@ -1372,11 +1382,11 @@ footer .copyright {
   outline: none;
 }
 
-#checkout .container .checkout-details .form select option{
+#checkout .container .checkout-details .form select option {
   font-size: 17px;
 }
 
-#checkout .disabled{
+#checkout .disabled {
   color: #fff;
   font-size: 20px;
   background: #000;
@@ -1565,6 +1575,7 @@ footer .copyright {
 #pro-detail .single-pro-detail {
   width: 50%;
   padding-top: 30px;
+  overflow-x: auto;
 }
 
 #pro-detail .single-pro-detail h4 {
@@ -1577,8 +1588,21 @@ footer .copyright {
 
 #pro-detail .single-pro-detail select {
   display: block;
-  padding: 5px 10px;
+  padding: 10px;
   margin-bottom: 10px;
+  width: 170px;
+}
+
+#pro-detail .single-pro-detail select selected{
+  background: var(--color-primary);
+}
+
+#pro-detail .single-pro-detail select .disabled{
+  background: #808080;
+}
+
+#pro-detail .single-pro-detail select option{
+  font-size: 18px;
 }
 
 #pro-detail .single-pro-detail input {
@@ -1608,6 +1632,28 @@ footer .copyright {
   background: var(--color-secondary);
 }
 
+#mytable{
+  overflow-x: auto;
+}
+
+#mytable thead{
+  font-size: 14px;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+#mytable thead td, #mytable tbody td{
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+#mytable td{
+  margin-right: 1px solid var(--color-primary);
+}
+
+#mytable tbody tr:nth-child(even){
+  background: #cdcaca;
+}
 /* About Page */
 #about-head marquee {
   background-color: var(--color-nav);
@@ -1761,7 +1807,7 @@ footer .copyright {
   height: 400px;
 }
 
-#booking{
+#booking {
   padding: 70px 0;
   display: flex;
   align-items: flex-start;
@@ -1836,7 +1882,7 @@ footer .copyright {
   font-size: 14px;
 }
 
-.form_book select{
+.form_book select {
   width: 100%;
   padding: 12px 0 12px 10px;
   font-size: 14px;
@@ -1846,12 +1892,11 @@ footer .copyright {
   outline: none;
 }
 
-.form_book select option{
+.form_book select option {
   font-size: 16px;
   padding: 10px;
   margin: 15px 0;
 }
-
 
 .form_book button {
   font-size: 12px;
@@ -1877,7 +1922,7 @@ footer .copyright {
 }
 
 /* school page */
-#cards{
+#cards {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -1887,56 +1932,98 @@ footer .copyright {
   margin: 0 auto;
 }
 
-.card{
+.card {
   width: 31%;
   text-align: center;
   padding: 60px 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 40px 5px rgb(0 0 0 / 6%);
-  background-image: linear-gradient(to left top, #1414e1, #033fe9, #1e5bee, #3d74ef, #5c8bed, #569ef3, #5aaff7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(
+    to left top,
+    #1414e1,
+    #033fe9,
+    #1e5bee,
+    #3d74ef,
+    #5c8bed,
+    #569ef3,
+    #5aaff7,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
   color: #fff;
   position: relative;
   cursor: pointer;
   margin-bottom: 30px;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.05);
   transition: all 0.7s ease-in-out;
 }
 
-.card h1{
+.card h1 {
   color: #fff;
   font-size: 28px;
   text-align: center;
 }
 
-.card hr{
+.card hr {
   width: 70%;
   margin: 0 auto;
   background: #fff;
   border: 1px solid #fff;
 }
 
-.card p{
+.card p {
   color: #efefef;
   font-size: 15px;
   line-height: 0.5;
 }
 
-.card p:last-of-type{
+.card p:last-of-type {
   margin-bottom: 30px;
 }
 
-.card:nth-of-type(2){
-  background-image: linear-gradient(to left top, #f57f18, #f57f18, #f57f18, #f57f18, #f57f18, #e8910a, #dba00b, #ccae1c, #a9c94d, #86de84, #66eebd, #5ffbf1);
+.card:nth-of-type(2) {
+  background-image: linear-gradient(
+    to left top,
+    #f57f18,
+    #f57f18,
+    #f57f18,
+    #f57f18,
+    #f57f18,
+    #e8910a,
+    #dba00b,
+    #ccae1c,
+    #a9c94d,
+    #86de84,
+    #66eebd,
+    #5ffbf1
+  );
 }
 
-.card:last-of-type{
-  background-image: linear-gradient(to left top, #f024f0, #f024f0, #f024f0, #f024f0, #f024f0, #f90dd7, #fe00bf, #ff00a9, #ff2b7c, #ff6151, #ff9129, #ffbb00);
+.card:last-of-type {
+  background-image: linear-gradient(
+    to left top,
+    #f024f0,
+    #f024f0,
+    #f024f0,
+    #f024f0,
+    #f024f0,
+    #f90dd7,
+    #fe00bf,
+    #ff00a9,
+    #ff2b7c,
+    #ff6151,
+    #ff9129,
+    #ffbb00
+  );
 }
 
-.card a{
+.card a {
   position: absolute;
   bottom: -12%;
   left: 50%;
@@ -1948,9 +2035,104 @@ footer .copyright {
   border-radius: 30px;
 }
 
-.card a:hover{
+.card a:hover {
   background: var(--color-secondary);
   transition: all 0.5s;
+}
+
+/* illustration page */
+#materials {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#materials ul h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#materials ul li::marker {
+  content: url("../img/resourses/marker.jpg");
+  margin-right: 20px;
+  font-size: 14px;
+  height: 10px;
+  width: 10px;
+}
+
+#materials ul li {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#terms h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#terms ul li::marker {
+  content: url("../img/resourses/marker.jpg");
+  margin-right: 20px;
+  font-size: 14px;
+  height: 10px;
+  width: 10px;
+}
+
+#terms ul{
+  margin-bottom: 30px;
+
+}
+
+#terms ul li {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* faq page */
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion h4{
+  font-size: 19px;
+}
+
+.accordion span{
+  background: var(--color-secondary);
+  font-size: 14px;
+  border-radius: 50%;
+  padding: 1px;
+
+}
+
+.panel p{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
 /* media querris for index page */
@@ -2041,7 +2223,7 @@ footer .copyright {
     font-size: 10px;
   }
 
-  .card a{
+  .card a {
     font-size: 12px;
   }
 }
@@ -2061,7 +2243,7 @@ footer .copyright {
     margin: 20px 0;
   }
 
-  .card{
+  .card {
     width: 48%;
   }
   .form_book button {
@@ -2211,7 +2393,6 @@ footer .copyright {
     border-radius: 5px;
     width: 30%;
   }
-
 }
 
 @media (max-width: 800px) {
@@ -2221,11 +2402,10 @@ footer .copyright {
 }
 
 @media (max-width: 660px) {
-  .card{
+  .card {
     width: 100%;
   }
 }
-
 
 @media (max-width: 550px) {
   #bars {
@@ -2411,5 +2591,9 @@ footer .copyright {
 
   #gallery img {
     width: 100%;
+  }
+
+  #materials {
+    flex-direction: column;
   }
 }

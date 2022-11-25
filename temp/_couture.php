@@ -6,7 +6,7 @@
 
 <!-- About us info -->
 <section id="about-head" class="section-p1">
-    <img src="img/banner/5.jpg" alt="Custom Oge by Oge attire">
+    <img src="img/resourses/13.jpg" alt="Custom Oge by Oge attire">
     <div>
         <h2>Unique outfits for Unique Women</h2>
         <p>It takes seconds to make a 1st impression and your clothes help cement an unforgettable memory in the minds of those you meet.</p>

@@ -10,6 +10,7 @@ const reg = document.getElementById("reg");
 const sign = document.getElementById("sign");
 const current = document.getElementsByClassName("current");
 
+
 // responsive navbar
 if (bar) {
   bar.addEventListener("click", () => {
@@ -83,3 +84,4 @@ function signin() {
   y.style.left = "450px";
   z.style.left = "0px";
 }
+

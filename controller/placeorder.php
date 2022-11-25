@@ -24,7 +24,7 @@ if (isset($_SESSION['user_id'])) {
 
         $user_id = $_SESSION['user_id'];
 
-        $query = "SELECT  c.cart_id as cid, c.item_id, c.qty, p.item_id , p.item_name, p.item_price, p.item_image
+        $query = "SELECT  c.cart_id as cid, c.item_id, c.qty, c.size, p.item_id , p.item_name, p.item_price, p.item_image
         FROM cart c, product p WHERE c.item_id = p.item_id AND c.user_id ='$user_id' ORDER BY c.cart_id DESC";
         $query_run = mysqli_query($conn, $query);
 
@@ -149,9 +149,10 @@ if (isset($_SESSION['user_id'])) {
             foreach ($query_run as $item) {
                 $item_id = $item['item_id'];
                 $item_qty = $item['qty'];
+                $size = $item['size'];
                 $item_price = $item['item_price'];
-                $insert_items_query = "INSERT INTO order_items (order_id, item_id, qty, price) VALUES ('$order_id', '$item_id',
-                '$item_qty', '$item_price')";
+                $insert_items_query = "INSERT INTO order_items (order_id, item_id, qty, size, price) VALUES ('$order_id', '$item_id',
+                '$item_qty', '$size', '$item_price')";
                 $insert_items_query_run = mysqli_query($conn, $insert_items_query);
             }
 

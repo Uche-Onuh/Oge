@@ -104,13 +104,14 @@ $data = mysqli_fetch_array($orderData);
                                                 <th>Product</th>
                                                 <th>Name</th>
                                                 <th>Price</th>
+                                                <th>Size</th>
                                                 <th>Quantity</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php
 
-                                            $order_query = "SELECT o.id as oid, o.tracking_no, o.user_id, oi. *, oi.qty as orderqty, p.  * FROM orders o, order_items oi, product
+                                            $order_query = "SELECT o.id as oid, o.tracking_no, o.user_id, oi. *, oi.qty as orderqty, oi.size, p.  * FROM orders o, order_items oi, product
                                             p WHERE oi.order_id=o.id AND p.item_id=oi.item_id AND o.tracking_no = '$tracking_no'";
                                             $order_query_run = mysqli_query($conn, $order_query);
 
@@ -124,7 +125,8 @@ $data = mysqli_fetch_array($orderData);
                                                             <img src="../img/exproducts/<?= $item['item_image'] ?>" alt="<?= $item['item_name'] ?>" style="width:70px; height:70px;">
                                                         </td>
                                                         <td class="align-middle"><?= $item['item_name'] ?></td>
-                                                        <td class="align-middle"><?= $item['item_price'] ?></td>
+                                                        <td class="align-middle">&#8358;<?= number_format($item['item_price']) ?></td>
+                                                        <td class="align-middle"><?= $item['size'] ?></td>
                                                         <td class="align-middle"><?= $item['orderqty'] ?></td>
                                                     </tr>
                                             <?php

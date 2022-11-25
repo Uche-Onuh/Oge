@@ -20,9 +20,9 @@ if (isset($_GET['t'])) {
 }
 
 $data = mysqli_fetch_array($orderData);
-if($data['reference'] !== ""){
+if ($data['reference'] !== "") {
     $payment_status = "Paid";
-}else{
+} else {
     $payment_status = "Pending";
 }
 ?>
@@ -47,7 +47,7 @@ if($data['reference'] !== ""){
                     <p>Contact no : <?= $data['phone'] ?></p>
                     <p>Shipping Address : <?= $data['shipping_address'] ?></p>
                     <p>Payment id : <?= $data['payment_id'] ?></p>
-                    <p>Payment status: <?= $payment_status?></p>
+                    <p>Payment status: <?= $payment_status ?></p>
                     <p>Payment reference no : <?= $data['reference'] ?></p>
                 </div>
                 <div class="checkout-prod">
@@ -56,7 +56,7 @@ if($data['reference'] !== ""){
                     <?php
                     $user_id = $_SESSION['user_id'];
 
-                    $order_query = "SELECT o.id as oid, o.tracking_no, o.user_id, oi. *, oi.qty as orderqty, p. * FROM orders o, order_items oi, product
+                    $order_query = "SELECT o.id as oid, o.tracking_no, o.user_id, oi. *, oi.qty as orderqty, oi.size, p. * FROM orders o, order_items oi, product
                         p WHERE o.user_id='$user_id' AND oi.order_id=o.id AND p.item_id=oi.item_id AND o.tracking_no = '$tracking_no'";
                     $order_query_run = mysqli_query($conn, $order_query);
 
@@ -68,7 +68,8 @@ if($data['reference'] !== ""){
                                 <div>
                                     <p class="name"><?= $item['item_name'] ?></p>
                                     <div class="price">&#8358; <?= number_format($item['item_price']); ?></div>
-                                    <p>QTY: <?= $item['orderqty'] ?></p>
+                                    <p><b>Size:</b> <?= $item['size'] ?></p>
+                                    <p><b>QTY:</b> <?= $item['orderqty'] ?></p>
                                 </div>
                                 <div id="sub">
                                 </div>
