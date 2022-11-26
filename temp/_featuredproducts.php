@@ -30,6 +30,7 @@ shuffle($product_shuffle);
                     </div>
                     <h4>&#8358; <?php echo number_format($item['item_price'] ?? '0'); ?> <small style="text-decoration: line-through; color:black; font-size:11px; margin-left: 10px;">&#8358; <?php echo number_format($item['discount_price'] ?? '0'); ?></small></h4>
                 </div>
+                <input type="hidden" value="Size 6" class="size">
                 <input type="hidden" value="1" class="qty-input">
                 <button class="cart-btn addToCartBtn" value="<?= $item['item_id']; ?>"><img src="img/svgs/solid/cart-shopping.svg" alt="" class="cart-img"></button>
             </div>
