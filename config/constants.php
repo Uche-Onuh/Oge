@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'smtps://exochosc:8-V6ANwe.39Tzm@mail.exochos.com.ng:465';
+$dsn = 'smtps://ogebyog1:G6KQ6!j9tY(8od@mail.ogebyoge.com.ng:465';
 
 
 define('DB_HOST', 'localhost');
