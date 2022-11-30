@@ -82,13 +82,13 @@ include("includes/header.php");
                                             <label class="mb-0">Product Weight(kg)</label>
                                             <input type="number" name="qty" class="form-control mb-2" value="<?= $data['qty'] ?>" placeholder="Enter Product Weight">
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 form-check form-switch">
                                             <label class="mb-0">Status</label> <br>
-                                            <input type="checkbox" <?= $data['status'] ? "checked" : "" ?> name="status">
+                                            <input type="checkbox" <?= $data['status'] ? "checked" : "" ?> name="status" class="form-check-input" role="switch">
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 form-check form-switch">
                                             <label class="mb-0">Trending</label> <br>
-                                            <input type="checkbox" <?= $data['trending'] ? "checked" : "" ?> name="trending">
+                                            <input type="checkbox" <?= $data['trending'] ? "checked" : "" ?> name="trending" class="form-check-input" role="switch">
                                         </div>
                                     </div>
                                     <div class="col-md-12">

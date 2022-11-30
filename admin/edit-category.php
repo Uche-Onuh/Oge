@@ -53,13 +53,13 @@ include("includes/header.php");
                                         <label for="">Meta Keywords</label>
                                         <textarea name="meta_keywords" id="" cols="30" rows="5" placeholder="Enter Meta Keywords" class="form-control"><?= $data['meta_keywords'] ?></textarea>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 form-check form-switch">
                                         <label for="">Status</label>
-                                        <input type="checkbox" <?= $data['status'] ? "checked" : "" ?> name="status">
+                                        <input type="checkbox" <?= $data['status'] ? "checked" : "" ?> name="status" class="form-check-input" role="switch">
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 form-check form-switch">
                                         <label for="">Popular</label>
-                                        <input type="checkbox" <?= $data['popular'] ? "checked" : "" ?> name="popular">
+                                        <input type="checkbox" <?= $data['popular'] ? "checked" : "" ?> name="popular" class="form-check-input" role="switch">
                                     </div>
                                     <div class="col-md-12">
                                         <button class="btn btn-warning" name="update_category_btn" type="submit">UPDATE</button>

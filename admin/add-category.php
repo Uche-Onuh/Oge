@@ -41,13 +41,13 @@ include("includes/header.php");
                                 <label for="">Meta Keywords</label>
                                 <textarea name="meta_keywords" id="" cols="30" rows="5" placeholder="Enter Meta Keywords" class="form-control"></textarea>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 form-check form-switch">
                                 <label for="">Status</label>
-                                <input type="checkbox" name="status">
+                                <input type="checkbox" name="status" class="form-check-input" role="switch">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 form-check form-switch">
                                 <label for="">Popular</label>
-                                <input type="checkbox" name="popular">
+                                <input type="checkbox" name="popular" class="form-check-input" role="switch">
                             </div>
                             <div class="col-md-12">
                                 <button class="btn btn-warning" name="add_category_btn" type="submit">SAVE</button>

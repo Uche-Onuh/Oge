@@ -25,9 +25,9 @@ include("includes/header.php");
                                         <input type="hidden" name="user_id" value="<?= $data['user_id'] ?>">
                                         <label for="" style="font-size: 50px; text-transform: capitalize;"> User: <?= $data['username']; ?></label>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 form-check form-switch">
                                         <label for="" style="font-size: 20px; margin-right: 20px;">Check to make an Admin or Uncheck to remove as Admin</label>
-                                        <input type="checkbox" <?= $data['role_as'] ? "checked" : "" ?> name="role_as">
+                                        <input type="checkbox" <?= $data['role_as'] ? "checked" : "" ?> name="role_as" class="form-check-input" role="switch">
                                     </div>
                                     <div class="col-md-12">
                                         <button class="btn btn-warning" name="create_admin_btn" type="submit">UPDATE</button>
