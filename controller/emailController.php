@@ -24,9 +24,9 @@ $email = (new Email());
 
 function sendVerificationEmail($userEmail, $token)
 {
-  global $mailer;
+    global $mailer;
 
-  $body = '<!DOCTYPE html>
+    $body = '<!DOCTYPE html>
             <html lang="en">
             <head> 
                 <meta charset="UTF-8">
@@ -44,22 +44,22 @@ function sendVerificationEmail($userEmail, $token)
                 
             </body>
             </html>';
-  // Create a message
-  $email = (new Email())
-    ->from('#')
-    ->to($userEmail)
-    ->subject('Verify  your Email adress')
-    ->html($body);
+    // Create a message
+    $email = (new Email())
+        ->from('info@ogebyoge.com.ng')
+        ->to($userEmail)
+        ->subject('Verify  your Email adress')
+        ->html($body);
 
-  // Send the message
-  $mailer->send($email);
+    // Send the message
+    $mailer->send($email);
 }
 
 function sendPasswordResetLink($userEmail, $token)
 {
-  global $mailer;
+    global $mailer;
 
-  $body = '<!DOCTYPE html>
+    $body = '<!DOCTYPE html>
             <html lang="en">
             <head> 
                 <meta charset="UTF-8">
@@ -81,23 +81,23 @@ function sendPasswordResetLink($userEmail, $token)
                 
             </body>
             </html>';
-  // Create a message
-  $email = (new Email())
-    ->from('#')
-    ->to($userEmail)
-    ->subject('Password reset')
-    ->html($body);
+    // Create a message
+    $email = (new Email())
+        ->from('info@ogebyoge.com.ng')
+        ->to($userEmail)
+        ->subject('Password reset')
+        ->html($body);
 
-  // Send the message
-  $mailer->send($email);
+    // Send the message
+    $mailer->send($email);
 }
 
 
-function sendOrderConfirmation($userEmail, $reference, $payment_id, $tracking_no, $address, $firstName,$surname, $id, $total)
+function sendOrderConfirmation($userEmail, $reference, $payment_id, $tracking_no, $address, $firstName, $surname, $id, $total)
 {
-  global $mailer;
+    global $mailer;
 
-  $body = '<!DOCTYPE html>
+    $body = '<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -294,15 +294,15 @@ function sendOrderConfirmation($userEmail, $reference, $payment_id, $tracking_no
 </body>
 
 </html>';
-  // Create a message
-  $email = (new Email())
-    ->from('#')
-    ->to($userEmail)
-    ->subject('Order Confirmation Mail')
-    ->html($body);
+    // Create a message
+    $email = (new Email())
+        ->from('sales@ogebyoge.com.ng')
+        ->to($userEmail)
+        ->subject('Order Confirmation Mail')
+        ->html($body);
 
-  // Send the message
-  $mailer->send($email);
+    // Send the message
+    $mailer->send($email);
 }
 
 
@@ -310,9 +310,9 @@ function sendOrderConfirmation($userEmail, $reference, $payment_id, $tracking_no
 
 function sendContactMail($name, $userEmail, $subject, $message)
 {
-  global $mailer;
+    global $mailer;
 
-  $body = '<!DOCTYPE html>
+    $body = '<!DOCTYPE html>
             <html lang="en">
             <head> 
                 <meta charset="UTF-8">
@@ -322,22 +322,22 @@ function sendContactMail($name, $userEmail, $subject, $message)
             </head>
             <body>
                 <div class="wrapper">
-                   <div>Name: '.$name.'</div>
-                   <div>Email: '.$userEmail.'</div>
-                   <div>Messsage: '.$message.'</div>
+                   <div>Name: ' . $name . '</div>
+                   <div>Email: ' . $userEmail . '</div>
+                   <div>Messsage: ' . $message . '</div>
                 </div>
                 
             </body>
             </html>';
-  // Create a message
-  $email = (new Email())
-    ->from('info@exochos.com.ng')
-    ->to('info@exochos.com.ng')
-    ->subject($subject)
-    ->html($body);
+    // Create a message
+    $email = (new Email())
+        ->from('info@ogebyoge.com.ng')
+        ->to('info@ogebyoge.com.ng')
+        ->subject($subject)
+        ->html($body);
 
-  // Send the message
-  $mailer->send($email);
+    // Send the message
+    $mailer->send($email);
 }
 
 function recieveMail($tracking_no)
@@ -362,10 +362,10 @@ function recieveMail($tracking_no)
             </html>';
     // Create a message
     $email = (new Email())
-    ->from('info@exochos.com.ng')
-    ->to('sales@exochos.com.ng')
-    ->subject($tracking_no)
-    ->html($body);
+        ->from('info@ogebyoge.com.ng')
+        ->to('sales@ogebyoge.com.ng')
+        ->subject($tracking_no)
+        ->html($body);
 
     // Send the message
     $mailer->send($email);

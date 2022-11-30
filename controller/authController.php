@@ -250,13 +250,11 @@ if (isset($_POST['form_submit_btn'])){
     $message = $_POST['message'];
 
  sendContactMail($name, $email, $subject, $message);
- 
         $name = '';
         $email = '';
         $subject = '';
         $message = '';
         header('location: contact.php');
-
 }
 
 
