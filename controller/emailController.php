@@ -340,6 +340,72 @@ function sendContactMail($name, $userEmail, $subject, $message)
     $mailer->send($email);
 }
 
+function sendApplication($name, $email, $phone, $program, $profeciency)
+{
+    global $mailer;
+
+    $body = '<!DOCTYPE html>
+            <html lang="en">
+            <head> 
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>You have a new mail</title>
+            </head>
+            <body>
+                <div class="wrapper">
+                   <div>Name: ' . $name . '</div>
+                   <div>Email: ' . $email . '</div>
+                   <div>Phone Number: ' . $phone . '</div>
+                   <div>Program Applying For: ' . $program . '</div>
+                   <div>Prior Experience: ' . $profeciency . '</div>
+                </div>
+                
+            </body>
+            </html>';
+    // Create a message
+    $email = (new Email())
+        ->from('info@ogebyoge.com.ng')
+        ->to('info@ogebyoge.com.ng')
+        ->subject('New School Application')
+        ->html($body);
+
+    // Send the message
+    $mailer->send($email);
+}
+
+function sendBooking($name, $email, $phone, $booking)
+{
+    global $mailer;
+
+    $body = '<!DOCTYPE html>
+            <html lang="en">
+            <head> 
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>You have a new mail</title>
+            </head>
+            <body>
+                <div class="wrapper">
+                   <div>Name: ' . $name . '</div>
+                   <div>Email: ' . $email . '</div>
+                   <div>Phone Number: ' . $phone . '</div>
+                   <div>Booking Date: ' . $booking . '</div>
+                </div>    
+            </body>
+            </html>';
+    // Create a message
+    $email = (new Email())
+        ->from('info@ogebyoge.com.ng')
+        ->to('info@ogebyoge.com.ng')
+        ->subject('New Booking Appointment')
+        ->html($body);
+
+    // Send the message
+    $mailer->send($email);
+}
+
 function recieveMail($tracking_no)
 {
     global $mailer;

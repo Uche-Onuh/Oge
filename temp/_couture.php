@@ -50,16 +50,16 @@
     </div>
     <div class="contact-form">
         <h4>Book Now</h4>
-        <form action="" class="form_book">
+        <form action="couture.php" class="form_book" method="POST">
             <label for="name">Name</label>
             <input type="text" name="fullname" placeholder="Enter your name here" id="name" required>
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="Enter your email here" id="email" required>
             <label for="phone">Phone number</label>
-            <input type="tel" id="phone" placeholder="Enter your Phone number" required>
+            <input type="tel" name="phone" name="phone" id="phone" placeholder="Enter your Phone number" required>
             <label for="booking_date">Date</label>
-            <input type="date" name="bookin_date" id="booking_date" required>
-            <button type="submit" class="contact_submit">Book Now</button>
+            <input type="date" name="booking_date" id="booking_date" required>
+            <button type="submit" class="contact_submit" name="booking_submit">Book Now</button>
         </form>
     </div>
 </section>

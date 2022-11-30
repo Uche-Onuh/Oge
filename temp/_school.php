@@ -76,13 +76,13 @@
     </div>
     <div class="contact-form">
         <h4>Apply Now</h4>
-        <form action="" class="form_book">
+        <form action="school.php" class="form_book" method="POST">
             <label for="name">Name</label>
             <input type="text" name="fullname" placeholder="Enter your name here" id="name" required>
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="Enter your email here" id="email" required>
             <label for="phone">Phone number</label>
-            <input type="tel" id="phone" placeholder="Enter your Phone number" required>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your Phone number" required>
             <label for="program">Program</label>
             <select name="program" id="program" required>
                 <option disabled selected>Select a program</option>
@@ -97,7 +97,7 @@
                 <option value="Intermediate">Intermediate level</option>
                 <option value="beginner">Lots of experience</option>
             </select>
-            <button type="submit" class="contact_submit">Book Now</button>
+            <button type="submit" class="contact_submit" name="application_submit">Apply Now</button>
         </form>
     </div>
 </section>

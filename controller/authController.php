@@ -258,3 +258,30 @@ if (isset($_POST['form_submit_btn'])){
 }
 
 
+if (isset($_POST['application_submit'])) {
+    $name = $_POST['fullname'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $program = $_POST['program'];
+    $profeciency = $_POST['profeciency'];
+
+    sendApplication($name, $email, $phone, $program, $profeciency);
+    $name = '';
+    $email = '';
+    $phone = '';
+    header('location: school.php');
+}
+
+if (isset($_POST['booking_submit'])) {
+    $name = $_POST['fullname'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $booking = $_POST['booking_date'];
+
+    sendBooking($name, $email, $phone, $booking);
+    $name = '';
+    $email = '';
+    $phone = '';
+    header('location: couture.php');
+}
+
